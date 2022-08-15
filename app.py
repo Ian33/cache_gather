@@ -27,8 +27,17 @@ def create_dash_layout(app):
     
     # Body 
     # body = html.Div([dcc.Markdown(""" ## I'm ready to serve static files on Heroku. Just look at this! """), html.Br(), html.Img(src='charlie.png')])
+    
+    all_options = {
+        'America': ['New York City', 'San Francisco', 'Cincinnati'],
+        'Canada': [u'Montréal', 'Toronto', 'Ottawa']
+    }
+
+    
     body = html.Div([
-        dcc.Dropdown(['NYC', 'MTL', 'SF'], 'NYC', id='demo-dropdown'),
+        dcc.Dropdown(options=[{'label': k, 'value': k} for k in all_options.keys()],
+        value='NYC',
+        id='demo-dropdown'),
         html.Div(id='dd-output-container')
         ])
 
