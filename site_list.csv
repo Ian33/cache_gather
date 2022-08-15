@@ -1,0 +1,737 @@
+site_numbet,site_sql_id,site_name,LAT,LON,COMMENT,GAGETAG,Elevation,ElevationComment
+000_temporary / spare,1531,Temporary Project Equipment Holding Site,,,for assigning equipment to projects without station ID,Stream Gauge(Recording),,
+01B,1182,Ames Creek in Snoqualmie Valley,47.68677,-121.983,Upstream side of NE 100th St Alternate 1,Metro Lab Sample Site,,
+02L,740,Cottage Creek at NE 159th ST,47.74293,-122.084,,Stream Gauge(Recording),225,from topo
+02M,1273,Struve Creek,47.73319,-122.065,,Stream Gauge(Recording),190,iMap 5' contours
+02M2,1277,Struve Creek North Fork 0131,47.73343,-122.06,,Stream Gauge(Recording),245,iMap 5' contours
+02Q,1275,Mackey Creek,47.69412,-122.091,,Stream Gauge(Recording),66.29,"survey, NAVD88"
+02Q_Pond,2076,NE 106th Beaver Pond,47.69406,-122.091,Risk Management Grant,Stream Gauge(Recording),,
+02R,1461,Bear Creek at RM2.1 in Friendly Village Mobile Home Park,47.68293,-122.093,for Bear Creek basin plan 2014,Stream Gauge(Recording),50,from iMap 5' contours
+02VN,1270,"Trilogy North Rain Gauge, Bear - Evans Watershed",47.71939,-122.028,Replace 02V,Precipitation Gauge(Recording),427,from imap 5' contours
+02a,41,Bear Creek @ Union Hill RD,47.67505,-122.107,snapped to GPS,Stream Gauge(Recording),33.28,"original USGS datum, NGVD 1929, brought forward with simultaneous measurements at new upstream locat"
+02e,45,"Bear Creek at 133rd ST NE, near Redmond",47.71768,-122.077,snapped to GPS,Stream Gauge(Recording),117,FT (NGVD88) - CLD from KC GIS Lidar
+02f,46,Bear Creek @ Woodinville-Duvall Rd,47.7549,-122.055,,Stream Gauge(Recording),,
+02f2,855,Bear Creek at NE 162,47.74493,-122.063,,Stream Gauge(Recording),203,imap
+02g,47,"Cottage Lake Creek at Avondale RD NE, Bear-Evans Watershed",47.7167,-122.088,Gage moved 300 feet down stream in 2000,Stream Gauge(Recording),,
+02w,52,"Cottage Lake Rain Gauge, Bear - Evans Watershed",47.75758,-122.08,snapped to GPS,Precipitation Gauge(Recording),,
+03G,598,Springbrook Creek at Grady Way,47.46808,-122.234,LIMS site A317,Stream Gauge(Recording),6.38,NAVD88 = Gage datum + 6.38 feet
+03G2,2135,Springbrook at Oaksdale Ave,47.46725,-122.233,,Stream Gauge(Recording),19.1,
+03V,1979,Springbrook Rain Gage,47.46808,-122.234,Uses same logger as 03G,Precipitation Gauge(Recording),,
+03u,72,Panther Creek Precip,47.41557,-122.2,snapped to GPS,Precipitation Gauge(Recording),,
+04u,4,Boeing Creek Rain Gauge,47.74965,-122.36,,Precipitation Gauge(Recording),,
+0512B_01,1046,Ballard Locks near end of Large Lock pier 1.0 m depth,47.6651,-122.394,,Thermistor Chain,,
+0512B_02,789,Ballard Locks near end of Large Lock pier 2.0 m depth,,,,Thermistor Chain,,
+0512B_03,1047,Ballard Locks near end of Large Lock pier 3.0 m depth,,,,Thermistor Chain,,
+0512B_04,1048,Ballard Locks near end of Large Lock pier 4.0 m depth,,,,Thermistor Chain,,
+0512B_05,790,Ballard Locks near end of Large Lock pier 5.0 m depth,,,,Thermistor Chain,,
+0512B_06,1049,Ballard Locks near end of Large Lock pier 6.0 m depth,,,,Thermistor Chain,,
+0512B_07,791,Ballard Locks near end of Large Lock pier 7.0 m depth,,,,Thermistor Chain,,
+0512B_08,1050,Ballard Locks near end of Large Lock pier 8.0 m depth,,,,Thermistor Chain,,
+0512B_09,792,Ballard Locks near end of Large Lock pier 9.0 m depth,,,,Thermistor Chain,,
+0512B_10,793,Ballard Locks near end of Large Lock pier 10.0 m depth,,,,Thermistor Chain,,
+0512B_11,794,Ballard Locks near end of Large Lock pier 11.0 m depth,,,,Thermistor Chain,,
+0512B_13,795,Ballard Locks near end of Large Lock pier 13.0 m depth,,,,Thermistor Chain,,
+0522B_01,1413,Lake Union 1 m depth,47.6331,-122.339,,Water Temperature Recorder,,
+0522B_02,809,Lake Union 2 m depth,,,,Thermistor Chain,,
+0522B_03,1051,Lake Union 3 m depth,,,,Thermistor Chain,,
+0522B_04,810,Lake Union 4 m depth,,,,Thermistor Chain,,
+0522B_05,1052,Lake Union 5 m depth,,,,Thermistor Chain,,
+0522B_06,811,Lake Union 6 m depth,,,,Thermistor Chain,,
+0522B_07,1053,Lake Union 7 m depth,,,,Thermistor Chain,,
+0522B_08,812,Lake Union 8 m depth,,,,Thermistor Chain,,
+0522B_09,1054,Lake Union 9 m depth,,,,Thermistor Chain,,
+0522B_10,813,Lake Union 10 m depth,,,,Thermistor Chain,,
+0522B_11,1055,Lake Union 11 m depth,,,,Thermistor Chain,,
+0522B_12,814,Lake Union 12 m depth,,,,Thermistor Chain,,
+0522B_13,1056,Lake Union 13 m depth,,,,Thermistor Chain,,
+0522B_14,815,Lake Union 14 m depth,,,,Thermistor Chain,,
+05A,340,Cherry Creek,47.7426,-121.941,Arc View est,Stream Gauge(Recording),57,from IMAP topo
+05Un,1725,Cherry Creek Rain new,47.73945,-121.908,"Replaces gage 05U, 0.2 miles north",Precipitation Gauge(Recording),312,imap
+05b,859,Cherry Creek trib EPA site,47.74102,-121.941,EPA grant study site. Ran for a while after study complete. Reactivated,Stream Gauge(Recording),70,imap
+0852B_04,758,Lake Washington off of 520 Bridge on NW side 4.0 meter depth,47.64204,-122.269,,Thermistor Chain,,
+0852B_06,759,Lake Washington off of 520 Bridge on NW side 6.0 meter depth,47.64204,-122.269,,Thermistor Chain,,
+0852B_08,760,Lake Washington off of 520 Bridge on NW side 8.0 meter depth,47.64204,-122.269,,Thermistor Chain,,
+0852B_12,761,Lake Washington off of 520 Bridge on NW side 12.0 meter depth,47.64204,-122.269,,Thermistor Chain,,
+0852B_14,762,Lake Washington off of 520 Bridge on NW side 14.0 meter depth,47.64204,-122.269,,Thermistor Chain,,
+0852B_16,763,Lake Washington off of 520 Bridge on NW side 16.0 meter depth,47.64204,-122.269,,Thermistor Chain,,
+0852B_18,764,Lake Washington off of 520 Bridge on NW side 18.0 meter depth,47.64204,-122.269,,Thermistor Chain,,
+0852B_30,765,Lake Washington off of 520 Bridge on NW side 30.0 meter depth,47.64204,-122.269,,Thermistor Chain,,
+0852B_45,1060,Lake Washington off of 520 Bridge on NW side 45.0 meter depth,47.64204,-122.269,,Thermistor Chain,,
+0890E_02,766,Lake Washington off of I-90 Bridge approx. midlake 2.0 meter depth,47.5895,-122.273,,Thermistor Chain,,
+0890E_04,767,Lake Washington off of I-90 Bridge approx. midlake 4.0 meter depth,,,,Thermistor Chain,,
+0890E_06,768,Lake Washington off of I-90 Bridge approx. midlake 6.0 meter depth,,,,Thermistor Chain,,
+0890E_08,769,Lake Washington off of I-90 Bridge approx. midlake 8.0 meter depth,,,,Thermistor Chain,,
+0890E_10,770,Lake Washington off of I-90 Bridge approx. midlake 10.0 meter depth,,,,Thermistor Chain,,
+0890E_12,771,Lake Washington off of I-90 Bridge approx. midlake 12.0 meter depth,,,,Thermistor Chain,,
+0890E_14,772,Lake Washington off of I-90 Bridge approx. midlake 14.0 meter depth,,,,Thermistor Chain,,
+0890E_15,773,Lake Washington off of I-90 Bridge approx. midlake 15.0 meter depth,,,,Thermistor Chain,,
+0890E_16,774,Lake Washington off of I-90 Bridge approx. midlake 16.0 meter depth,,,,Thermistor Chain,,
+0890E_18,775,Lake Washington off of I-90 Bridge approx. midlake 18.0 meter depth,,,,Thermistor Chain,,
+0890E_20,776,Lake Washington off of I-90 Bridge approx. midlake 20.0 meter depth,,,,Thermistor Chain,,
+0890E_25,777,Lake Washington off of I-90 Bridge approx. midlake 25.0 meter depth,,,,Thermistor Chain,,
+0890E_30,778,Lake Washington off of I-90 Bridge approx. midlake 30.0 meter depth,,,,Thermistor Chain,,
+0890E_35,779,Lake Washington off of I-90 Bridge approx. midlake 35.0 meter depth,,,,Thermistor Chain,,
+0890E_45,1061,Lake Washington off of I-90 Bridge approx. midlake 45.0 meter depth,,,,Thermistor Chain,,
+0890E_55,780,Lake Washington off of I-90 Bridge approx. midlake 55.0 meter depth,,,,Thermistor Chain,,
+0890W_04,781,Lake Washington off of I-90 Bridge on SW side 4.0 meter depth,47.58965,-122.28,,Thermistor Chain,,
+0890W_06,782,Lake Washington off of I-90 Bridge on SW side 6.0 meter depth,47.58965,-122.28,,Thermistor Chain,,
+0890W_08,783,Lake Washington off of I-90 Bridge on SW side 8.0 meter depth,47.58965,-122.28,,Thermistor Chain,,
+0890W_12,784,Lake Washington off of I-90 Bridge on SW side 12.0 meter depth,47.58965,-122.28,,Thermistor Chain,,
+0890W_14,785,Lake Washington off of I-90 Bridge on SW side 14.0 meter depth,47.58965,-122.28,,Thermistor Chain,,
+0890W_16,786,Lake Washington off of I-90 Bridge on SW side 16.0 meter depth,47.58965,-122.28,,Thermistor Chain,,
+0890W_18,787,Lake Washington off of I-90 Bridge on SW side 18.0 meter depth,47.58965,-122.28,,Thermistor Chain,,
+0890W_30,788,Lake Washington off of I-90 Bridge on SW side 30.0 meter depth,47.58965,-122.28,,Thermistor Chain,,
+0890W_45,1062,Lake Washington off of I-90 Bridge on SW side 45.0 meter depth,47.58965,-122.28,,Thermistor Chain,,
+09D_UP,1766,Ravensdale Creek (Lake Sawyer Inflow #3) UP,,,,Stream Gauge(Recording),,
+09V,754,Covington Creek Rain Gauge below Lake Sawyer,47.3216,-122.041,Replacement for 09U,Precipitation Gauge(Recording),540,From King County iMap 5' Contours
+09a,5,"Covington Creek near Mouth, Soos CR Watershed",47.31258,-122.108,,Stream Gauge(Recording),335,FT (NGVD88) - CLD from KC GIS Lidar
+09b,6,Rock Creek at Lake Sawyer - Soos Creek Watershed,47.32261,-122.028,Restarted 2/3/2015,Stream Gauge(Recording),,
+09d,8,Ravensdale Creek (Lake Sawyer Inflow #3),47.32636,-122.028,Restarted 2/3/2015,Stream Gauge(Recording),,
+09f,1530,Lake Sawyer Level,47.32608,-122.029,,Stream Gauge(Recording),522,estimate from iMap
+11b,11,Tyee Regional Pond - Des Moines Creek,47.42707,-122.306,Restarted for pond level 11/1/2008,Stream Gauge(Recording),264.44,"Top of well Based on as-built plans, invert diversion = 258.86, depth at invert & well tape down."
+11c,12,Des Moines Creek above Tyee Regional Pond,47.4298,-122.305,snapped to GPS,Stream Gauge(Recording),,
+11d,13,"Des Moines Creek below SR 509, Des Moines (near mouth)",47.40591,-122.328,snapped to GPS,Stream Gauge(Recording),17,FT (NGVD88) - CLD from KC GIS Lidar
+11e,55,Des Moines Tributary 0379,47.42635,-122.309,Reinstalled 10/17/2008,Stream Gauge(Recording),,
+11f,54,Des Moines Tributary 0377 at Tyee Weir,47.42461,-122.306,"restarted 11/1/2008, stage only",Stream Gauge(Recording),260,from iMap 20' contours
+11g,56,NW Ponds Outlet Des Moines CR 0379,47.4271,-122.311,,Stream Gauge(Recording),,lat lon from google map 4/22/08 def
+11h,57,Bow Lake,47.43714,-122.295,snapped to GPS,Stream Gauge(Recording),,
+11i,1088,Tyee By-Pass - Des Moines Creek,47.42706,-122.307,in catch basin,Stream Gauge(Recording),272,from iMap 5' contours
+11u,58,Des Moines Creek Rain Gauge,47.42708,-122.306,Located at top of Tyee Control Structure,Precipitation Gauge(Recording),,
+14b,722,East Fork Issaquah Creek @ NE Birch,47.5323,-122.03,,Stream Gauge(Recording),,
+14u,65,East Fork Issaquah Rain Gauge,47.5317,-121.987,,Precipitation Gauge(Recording),,
+15W,1916,East Lake Sammamish at City Hall,47.60142,-122.037,,Precipitation Gauge(Recording),,
+15c,80,Laughing Jacobs Creek at E Lake Sammamish Pkwy,47.56538,-122.052,snapped to GPS,Stream Gauge(Recording),52,FT (NGVD88) - CLD from KC GIS Lidar
+15e,82,Hazel Wolf Wetland - 1510,47.60231,-122.001,,Stream Gauge(Recording),455,Gage surveyed
+15h,1133,Ebright Creek,47.60843,-122.073,Sample site may not equate with gage site,Stream Gauge(Recording),45,imap
+15i,1893,Zackuse Creek below W.Lk. Sammamish PKWY,47.61009,-122.066,moved from dwst loc (below E Lake Samm. Pkwy) on 2/8/2021,Stream Gauge(Recording),,
+17B,1439,Gorsuch Creek,47.45368,-122.445,VA65 site,Stream Gauge(Recording),8,within tidal effect
+18V2,1084,Redmond Ridge Rain,47.6794,-122.035,at pond ECW2-1,Precipitation Gauge(Recording),518,from iMap 5' contours
+18Y,326,Mystic Lake Rain Gauge East,47.6279,-122.025,same as gauge ml3,Precipitation Gauge(Recording),,
+18a,87,Evans Creek @ Union Hill Road,47.67507,-122.081,,Stream Gauge(Recording),52.4,"original USGS staff datum, NGVD 1029, tied into new site upstream"
+19U,1042,Rain Gage at Residential NPDES monitoring site in Fall City; inlet to residential stormwater facility D92861 Twin Cedars,47.56529,-121.895,,Precipitation Gauge(Recording),,
+21A,338,Griffin Creek,47.61632,-121.907,Arc View est,Stream Gauge(Recording),,
+21B,1183,Griffin Creek @ E Griffin Creek Rd SE,47.60609,-121.886,Approximately 1.5 miles east of Hwy 203 on E Griffin Creek Road SE,Metro Lab Sample Site,,
+22A,339,Harris Creek,47.6939,-121.901,Arc View est,Stream Gauge(Recording),,
+22B,1181,Harris Creek @ Carnation Duvall Rd,47.67813,-121.907,Below Carnation Duvall Rd-upstream side,Metro Lab Sample Site,,
+24v,23,East Fork Hylebos Rain Gauge,47.26284,-122.313,snapped to GPS,Precipitation Gauge(Recording),,
+25A,596,Issaquah Creek at SE 56th ST,47.55218,-122.048,USGS Gage 12121600,Water Temperature Recorder,,
+25J,2061,McDonald Creek at 219th,47.47772,-122.049,,Stream Gauge(Recording),311,
+25T,1512,Issaquah Creek at Hatchery,47.52971,-122.039,Downstream right bank of ped bridge.,Water Temperature Recorder,102,iPhone GPS
+25i,1188,Carey Creek at 287th,47.42289,-121.961,WRIA 8 project,Stream Gauge(Recording),528,imap
+25v,29,McDonald Creek Rain Gauge - Issaquah Creek Watershed,47.47884,-122.06,,Precipitation Gauge(Recording),,
+26a,31,Jenkins Creek near Mouth - Soos Creek Watershed,47.34039,-122.129,,Stream Gauge(Recording),314,FT (NGVD88) from KC GIS Lidar
+26u,33,Jenkins Creek Rain Gauge - Soos Creek Watershed,47.35956,-122.068,,Precipitation Gauge(Recording),,
+27V,2153,"Big Finn Hill Park Rain Gage, Kirkland",47.72368,-122.237,for City of Kirkland,Precipitation Gauge(Recording),,
+27a,34,Juanita Creek at Mouth,47.70767,-122.215,snapped to GPS,Stream Gauge(Recording),26,FT (NGVD88) - CLD from KC GIS
+27c,36,Juanita Creek Tributary 0235 above 100th AV NE,47.71533,-122.204,,Stream Gauge(Recording),,
+27u,93,Juanita Creek Rain Gauge,47.73061,-122.171,snapped to GPS,Precipitation Gauge(Recording),,
+28Y,727,"West Judd Creek Rain Gage, Vashon Island",47.43699,-122.499,"18900 West Vashon Highway, at SWD Transfer Station",Precipitation Gauge(Recording),,
+28a,319,"Judd Creek, Vashon Island",47.4034,-122.469,,Stream Gauge(Recording),16,
+30AN,1240,Little Bear @ NE 195th,47.7687,-122.157,,Stream Gauge(Recording),90,from iMap 5' contours
+30C,699,"Little Bear Creek above tributary 0083, Snohomish County",47.7961,-122.144,"Little Bear Creek project (#423484) sampling site, LIMS locator AD478",Water Temperature Recorder,,
+30D,738,Little Bear @ 51st,47.83259,-122.163,,Water Temperature Recorder,365,from topo map
+30E,565,Little Bear Creek located on north side of bridgeoff Maltby Rd @ RM 5,47.81095,-122.159,Formerly LBR0495000,Water Temperature Recorder,,
+31D3,1906,North Fork Madsen Creek at 162 Ave SE,47.45352,-122.126,SWS facility D90119,Stream Gauge(Recording),485,
+31UN,342,Renton Roads Rain,47.48189,-122.174,Arc View est,Precipitation Gauge(Recording),,
+31Y2,1039,Fairwood Rain Gage - 2009 site,47.44325,-122.144,"At Fire Dist 40 Station, approximately .33 miles SW of old 31Y",Precipitation Gauge(Recording),504,imap
+31ab,1185,Cedar River at River Mile 1.46,,,,Metro Lab Sample Site,,
+31c,97,Molasses Creek at Mouth,47.46665,-122.16,restarted 10/21/2014,Stream Gauge(Recording),,
+31d,98,Madsen Creek above Sedimentation Pond,47.46248,-122.143,"1988 - 1998 total flow out of sed pond, 2000 on total flow into pond.",Stream Gauge(Recording),,
+31d4,1980,Madsen Creek west trib,47.44867,-122.138,,Stream Gauge(Recording),410,
+31d5,1981,Madsen Creek east trib,47.44876,-122.135,,Stream Gauge(Recording),420,
+31h,102,Taylor Creek at Mouth,47.42072,-122.041,snapped to GPS,Stream Gauge(Recording),274,
+31i,103,Taylor Creek above 236th AV SE,47.409,-122.025,approx 400 ft upst from old site,Stream Gauge(Recording),408,from imap
+31q,865,Webster Creek,47.41643,-121.919,,Stream Gauge(Recording),830,
+31w2,1261,Peterson Rain 2,47.42314,-122.085,"1,500 ft from 31w site.",Precipitation Gauge(Recording),493,imap
+31z,321,Hobart Rain Gauge,47.41681,-121.943,Tina M. and Eric's yard near well shed 425-432-0466,Precipitation Gauge(Recording),880,
+32D,1978,Green River at Reddington Turbidity,47.34559,-122.207,Turbidity and temperature for bioenergetics model.,Water Temperature Recorder,,
+32u,114,Lower Green River Rain Gauge,47.31956,-122.18,snapped to GPS,Precipitation Gauge(Recording),,
+33DN,2162,McSorley Creek at Saltwater State Park - New Site,47.37305,-122.323,for SWS project,Stream Gauge(Recording),,
+34a,117,Lyon Creek near Mouth in Lake Forest Park,47.75293,-122.278,,Stream Gauge(Recording),,
+35c,120,McAleer @ Mouth,47.75178,-122.281,snapped to GPS,Stream Gauge(Recording),,
+35u,122,Brugger's Bog Raingauge,47.77198,-122.303,"Upgraded to 510 logger, air temp, and baro on 4/9/2012",Precipitation Gauge(Recording),,
+36A,712,Mileta Creek,47.3883,-122.427,Formerly VA45. Continuous recorder since 1/27/2010,Stream Gauge(Recording),,
+36U,728,"Maury Island Rain Gage, Vashon Island",47.39959,-122.434,"Kiro Radio tower property, on garage, 7500 SW PT Robinson RD",Precipitation Gauge(Recording),,
+36V,733,"East Maury Island Rain, Vashon Island",47.3863,-122.376,Located south of southernmost building at Pt. Robinson.,Precipitation Gauge(Recording),,
+37E,334,May Creek @ 164th Ave Bridge,47.50166,-122.122,BG est,Stream Gauge(Recording),,
+37G,633,May Creek @ 148th Ave SE Bridge,47.51529,-122.143,GPSed 11/4/2002,Stream Gauge(Recording),,
+37H,1035,May Creek at 143 Pl SE,47.51693,-122.15,"USGS site 12119375 MAY CREEK AT RENTON, WA",Stream Gauge(Recording),308,imap
+37W,323,Upper May Creek Rain Gauge,47.50355,-122.09,moved on 9/28/2020,Precipitation Gauge(Recording),,"184448.8,1329107.5;47.49867,-122.09275 2015 site"
+37X,1944,May Creek Mouth Rain Gage,47.5281,-122.203,,Precipitation Gauge(Recording),,
+37a,123,May Creek @ Mouth,47.52993,-122.201,snapped to GPS,Stream Gauge(Recording),26,FT (NGVD88) - CLD from KC GIS Lidar
+37b,124,May Creek at Coal Creek PKWY,47.51811,-122.159,snapped to GPS,Stream Gauge(Recording),,
+37i,2031,May Creek trib at 116th St fishladder,47.49899,-122.127,,Stream Gauge(Recording),395,
+37u,128,Lower May Creek Rain Gauge,47.51235,-122.149,Gage moved approx. 1 mile east Oct 2001. Previous location is 37UN.,Precipitation Gauge(Recording),,
+38D,2040,Kelsey Creek West Fork @ Sound Transit Base,47.62859,-122.18,,Stream Gauge(Recording),,
+38U,2094,"Snyders Corner Rain Gage, City of Kirkland",47.66603,-122.163,for City of Kirkland,Precipitation Gauge(Recording),,
+38V,2041,Kelsey Creek West Fork Rain Gage,47.62859,-122.18,,Precipitation Gauge(Recording),,
+39M,1175,Middle Fork Snoqualmie,47.51599,-121.769,,Metro Lab Sample Site,,
+40d,133,Crisp Creek at Green River RD,47.28903,-122.067,,Stream Gauge(Recording),,
+40u,134,Middle Green Rain Gauge,47.2607,-122.092,snapped to GPS,Precipitation Gauge(Recording),,
+41R,1947,Auburn Drain at 86th,47.35771,-122.227,,Stream Gauge(Recording),,
+41X,1942,Green River at West Valley and SR 512 Rain Gage,47.37647,-122.248,,Precipitation Gauge(Recording),,
+41Y,1977,Auburn Rain Gage @ 42nd St,47.34518,-122.227,,Precipitation Gauge(Recording),,
+41a,135,Mill Creek at SR 181,47.36763,-122.249,"Stream Gauge 11/1/88-9/1/96, 2003 - 2006. Temperature probe 9/29/99.",Stream Gauge(Recording),,
+41u,141,Star Lake Rain Gauge,47.35259,-122.289,snapped to GPS,Precipitation Gauge(Recording),,
+41v,142,Lake Dolloff Rain Gauge,47.32145,-122.292,snapped to GPS,Precipitation Gauge(Recording),,
+42AA,1150,Miller Creek at treatment plant,47.44967,-122.347,,Stream Gauge(Recording),45,imap
+42M,1219,Miller Creek blw Ambaum Blvd,47.45741,-122.334,,Stream Gauge(Recording),167,imap
+42N,1241,Hwy 509 trib to Miller Creek,47.45709,-122.328,,Stream Gauge(Recording),202,imap
+42R,870,Lake Reba culvert outlet,47.46855,-122.315,Data from Taylor Associates,Stream Gauge(Recording),275,from imap
+42RR,1237,Lake Reba lake level,47.46859,-122.315,,Stream Gauge(Recording),275,imap
+42a,143,Miller Creek near Mouth,47.44548,-122.352,Restarted December 2012 for water quality monitoring,Stream Gauge(Recording),20,FT (NGVD88) - CLD from KC GIS Lidar
+42b,144,Miller Creek Detention Facility,47.46751,-122.318,,Stream Gauge(Recording),,
+42e,147,"Walker Creek, 13th SW, in Normandy Park",47.44497,-122.35,moved from 47.44459 -122.35089,Stream Gauge(Recording),23,imap
+42h,150,"Ambaum Outflow on Miller Creek, 1st Ave S. in Seat",47.45698,-122.334,Monitoring pond level 6/3/2013,Stream Gauge(Recording),,
+42j,828,Miller Creek abv Hwy 509,47.45417,-122.325,,Stream Gauge(Recording),208,from imap
+42k,829,Walker Creek blw Hwy 509,47.44656,-122.322,,Stream Gauge(Recording),247,from imap
+42u,152,Lake Reba Rain Gauge,47.46666,-122.313,,Precipitation Gauge(Recording),,
+43U,154,"North Vashon Rain Gauge, Vashon Island",47.48771,-122.47,,Precipitation Gauge(Recording),,
+43a,153,"Shingle Mill Creek, Vashon Island",47.4783,-122.482,,Stream Gauge(Recording),,
+44B,2146,Lower Newaukum Upper,47.29379,-122.067,,Groundwater Observation Well(Recording),,
+44B_2,2147,Lower Newaukum Upper,47.29379,-122.067,,Groundwater Observation Well(Recording),,
+44I_B16,1348,Big Spring Creek GW Well B16,47.21563,-122.022,For Big Spring Creek project,Groundwater Observation Well(Recording),644.54,surveyed
+44a,1093,Newaukum USGS Gage,47.27407,-122.056,Tethered to lower USGS Staff Plate,Water Temperature Recorder,377,
+44i-P2-1,1484,Big Spring Phase II Well 1,47.22155,-122.019,,Groundwater Observation Well(Recording),647.05,Survey
+44i-P2-3,1485,Big Spring Phase II Well 3,47.22385,-122.017,,Groundwater Observation Well(Recording),649.74,survey
+44i-P2-4,1487,Big Spring Phase II Well 4,47.22331,-122.018,,Groundwater Observation Well(Recording),647.71,Survey
+44i-P2-5,1489,Big Spring Phase II Well 5,47.22315,-122.017,,Groundwater Observation Well(Recording),648.73,Survey
+44i-P2-B6,1486,Big Spring Phase II Well B6,47.22339,-122.019,,Groundwater Observation Well(Recording),647.59,Survey
+44j,1482,Big Spring Top Phase I,47.2209,-122.02,,Stream Gauge(Recording),650.51,"top PVC, B. Pendergast survey"
+44k,1556,Big Spring - Carter ditch,47.21624,-122.022,surface water gauge in ditch at NW end of Carter Property,Stream Gauge(Recording),,"1,345,108.40215 81,172.53734 Foot"
+44u,155,Enumclaw Rain Gauge,47.20724,-121.956,,Precipitation Gauge(Recording),838,from iMap 5'' contours
+45A,569,North Creek located on west side of creek north of Hwy. 522 bridge,47.75722,-122.189,Formerly NCK0008000,Water Temperature Recorder,,
+45B,568,North Creek located on north-west side underneath 185th St. bridge near Kennard Corner @ RM5,47.82034,-122.212,Formerly NCK0527000,Water Temperature Recorder,,
+45C,2150,North Creek @ North Creek Parkway,47.77036,-122.186,,Stream Gauge(Recording),,
+45Nc,689,"North Creek at County Line, Snohomish County gage",47.78036,-122.189,Data obtained from Snohomish County,Stream Gauge(Recording),,
+46a,156,"Issaquah Creek, North Fork",47.54278,-122.034,snapped to GPS,Stream Gauge(Recording),77,FT (NGVD88) - CLD from KC GIS Lidar
+47N,1174,North Fork Snoqualmie,47.52194,-121.77,Sample under bridge on right bank,Metro Lab Sample Site,,
+48AN,1238,Patterson Creek Above 292nd Ave SE Bridge,47.5879,-121.954,Replaces 48A,Stream Gauge(Recording),95.85,Shot from top of well by survery crew tied to monument on new bridge.
+48D,1179,Patterson Creek at Snoqualmie River Rd SE,47.59156,-121.927,,Metro Lab Sample Site,,
+48Y,341,Patterson Creek Upper @ Nursery,47.63892,-122.008,GPSed,Precipitation Gauge(Recording),,
+49A,1177,Raging River,47.56689,-121.883,Mouth of Raging River from right bank,Metro Lab Sample Site,,
+50E,796,Mallard Lake Level,47.50979,-122.35,Lake level only. Restarted March 2017,Stream Gauge(Recording),360,from contour map
+50L,690,"Hicklin Lake, nee Lake Hicks",47.5031,-122.346,"1/11/2019: moved baro data to 50U, removed data from Flow tables. DEF",Stream Gauge(Recording),360.26,top of mh cover over pump sump
+50c,170,Lakewood Pumps,47.50309,-122.347,,Stream Gauge(Recording),,
+50i,1724,NE White Center drainage pipe at SW108th x 8th AV SW,47.50664,-122.345,for Hicklin P loading project,Stream Gauge(Recording),,
+50u,173,Salmon Creek Rain Gauge,47.502,-122.352,moved to current location 6/19/1998.,Precipitation Gauge(Recording),,
+51CC,1172,Sammamish Lab Sample Site at 145th,47.7328,-122.146,"Sammamish River, NE 145th ST under bridge, north post (was SammR_06)",,,
+51R,586,Sammamish River south side in middle support of lower Woodinville RR bridge (just above Little Bear Creek),47.75439,-122.169,Formerly SMR0545000,Water Temperature Recorder,,
+51T,739,"Sammamish River at NE 116th ST, USGS gage 12125200 data before 2005",47.70302,-122.144,,Stream Gauge(Recording),26.9,NGVD 1929 USGS
+51aa,1132,Sammamish at Mouth,,,,WQi,,
+51m,180,Sammamish River @ Marymoor Weir--This gage subject to backwater effects from Bear Creek. Data flagged with a â€˜pâ€™ is provisional and has not been corrected.,47.65823,-122.117,,Stream Gauge(Recording),26.5,"3/7/2006 survey by L. Goulet,NAVD88 26.50 = 0.00 on staff plate"
+51p,313,Sammamish River at West Park Entrance,47.66252,-122.125,need to calc Lat Lon and LLID,Water Temperature Recorder,,
+51u,181,Norway Rain Gauge in Kenmore,47.738,-122.209,"snapped to GPS, moved 9/20/2019 to newer well maintained pond nearby",Precipitation Gauge(Recording),,
+51w,183,Hollywood Hill Rain Gauge,47.72625,-122.124,Home owner is Colin Robinson. I don't have current email.,Precipitation Gauge(Recording),,
+53G,2030,Mud Creek,47.56161,-121.857,,Stream Gauge(Recording),222,imap
+53Sky,1180,Skykomish River,47.71145,-121.373,,Metro Lab Sample Site,,
+53aa,1173,Snoqualmie River @ Taylor Landing,47.74524,-121.987,Rbank boat launch Taylor landing downstream of Duvall,Metro Lab Sample Site,,
+53e,863,Weiss Creek,47.69186,-121.945,"restarted 8/30/2017, moved from 47.6925 -121.94537, 10/23/17 adj state p",Stream Gauge(Recording),68,imap
+54J,1116,Soos Creek at Kent-Black Diamond RD,47.34353,-122.134,For WRIA 9 Retro project,Stream Gauge(Recording),310,from iMap 5 foot contours
+54a,187,Soos Creek at Mouth,47.31251,-122.165,,Water Temperature Recorder,,
+54h,191,Soosette Creek Above SR 18,47.3329,-122.156,,Stream Gauge(Recording),247,FT (NGVD88) - CLD from KC GIS Lidar
+54i,192,Little Soos Creek at SE 272nd,47.35824,-122.125,,Stream Gauge(Recording),,
+54v,193,Soos Creek Rain Gauge,47.37961,-122.143,,Precipitation Gauge(Recording),355,from iMap 5 foot contours
+55A,1267,Clough Creek,47.47092,-121.786,,Stream Gauge(Recording),505,
+55B,1268,Ribary Creek,47.48647,-121.796,,Stream Gauge(Recording),456,
+55B2,1952,Ribary Creek at Bendingo Ave,47.49045,-121.793,,Stream Gauge(Recording),445.95,
+55B3,1951,Ribary at RR bridge,47.49781,-121.793,,Stream Gauge(Recording),433.09,
+55C,1269,Gardiner Creek,47.48856,-121.799,,Stream Gauge(Recording),465,
+55S,1176,South Fork Snoqualmie,47.50202,-121.786,Sample from trail bridge downstream of North Bend Blvd,Metro Lab Sample Site,,
+56A,588,Swamp Creek at Bothell Way,47.75516,-122.234,"Formerly SWP0043000,",Water Temperature Recorder,,
+56C,589,Swamp Creek at Locust Rd.,47.79895,-122.255,Formerly SWP0428000,Water Temperature Recorder,,
+56b,196,Swamp Creek,47.76763,-122.243,Gap in flow record 2006.,Stream Gauge(Recording),,
+58A,1122,"Thornton Creek near Mouth, STA046, USGS 1212800 data before 2013",47.69624,-122.277,At site of discontinued USGS gage 12128000,Stream Gauge(Recording),25,from iMap 5' contours
+58C,1673,Thornton Creek North Branch (35TH Ave NE & NE 110TH Street) SPU STA033,47.70846,-122.29,Seattle Public Utilities hosted data,Stream Gauge(Recording),,
+58D,1675,Thornton Creek North Branch At Jackson Golf Course (STA066) (10TH Ave NE & NE 135TH Street) Seattle Public Utilities site,47.72476,-122.315,"47.725030 & 122.319903, moved in 2019 47.72476, -122.31475",Stream Gauge(Recording),,
+58E,1674,Thornton Creek South Branch STA039 (9TH Ave NE & NE 105TH Street) Seattle Public Utilities site STA039,47.70666,-122.318,Seattle Public Utilities hosted data,Stream Gauge(Recording),,
+58F,1858,Thornton Creek South Branch - Maple Leaf Creek (STA049),47.70692,-122.293,Seatle Public Utilities Gauge,Stream Gauge(Recording),60,
+60A,1178,Tolt River,47.63805,-121.918,Mouth of Tolt: RB of river above confluence,Metro Lab Sampling Site,,
+61A,852,Tuck Creek,47.7438,-122.01,,Stream Gauge(Recording),64,from imap
+63a,198,Lewis Creek at West Lake Sammamish Parkway SE,47.56377,-122.095,activated for WRIA 8 project,Stream Gauge(Recording),,
+63y,202,Cougar Mountain Rain Gauge,47.5411,-122.098,snapped to GPS,Precipitation Gauge(Recording),1320,Taken from Google Topo
+65A,704,"Tahlequah Creek at mouth, Vashon Island",47.3345,-122.509,Gage site adjacent to the downstream end of culvert under SW Pohl Rd,Stream Gauge(Recording),,
+65B,703,"Fisher Creek at mouth, Vashon Island",47.3841,-122.482,Gage sit adjacent to the upsteam end of culvert under Vashon Hwy SW,Stream Gauge(Recording),,
+65U,730,"Tahlequah Rain Gage, Vashon Island",47.33458,-122.509,At Mr. and Mrs. Hall 28206 137th SW,Precipitation Gauge(Recording),,
+66U,1930,White River Rain Gage at Janssen's Addition,47.2761,-122.152,,Precipitation Gauge(Recording),,
+67B,1184,Tibbetts Creek @ State Park Entrance,47.552,-122.068,,Metro Lab Sample Site,,
+67u,204,Tibbetts Creek Rain Gauge,47.5267,-122.063,snapped to GPS,Precipitation Gauge(Recording),,
+68A,1679,Carkeek Park (Pipers Creek) Seattle Public Utilities site (STA508),47.71062,-122.371,Seattle Public Utilities hosted data,Stream Gauge(Recording),,
+69B,1074,Boise at 268th AV SE,47.1903,-121.984,,Stream Gauge(Recording),744.35,"KC survey, L. Goulet, May 2010"
+69C,1073,Boise at 276th AV SE,47.1885,-121.974,,Stream Gauge(Recording),755.18,"KC survey, L. Goulet, May 2010"
+69D,2154,Boise Creek at 284th Ave SE,47.18542,-121.963,Bickford Restoration,Stream Gauge(Recording),,
+69E,2155,Boise Creek at Bickford Restoration,47.1856,-121.964,Bickford Restoration,Stream Gauge(Recording),,
+69F,2156,Boise Creek above Beaver Creek,47.18524,-121.966,Bickford Restoration,Stream Gauge(Recording),,
+69_BIWL_1,2157,Middle Boise Bickford Groundwater Well #1,47.18504,-121.966,Bickford Restoration,Groundwater Observation Well(Recording),,
+69_BIWL_2,2158,Middle Boise Bickford Groundwater Well #2,47.18551,-121.964,Bickford Restoration,Groundwater Observation Well(Recording),,
+69_BIWL_3,2159,Middle Boise Bickford Groundwater Well #3,47.1855,-121.965,,Groundwater Observation Well(Recording),,
+69_BIWL_4,2160,Middle Boise Bickord Groundwater Well #4,47.18518,-121.965,,Groundwater Observation Well(Recording),,
+69_BIWL_5,2161,Middle Boise Bickford Groundwater Well #5,47.18518,-121.964,,Groundwater Observation Well(Recording),,
+AMSLK,1870,Ames Lake,47.63893,-121.959,,Temperature and Lake Level (Recording),250,iMap
+ANGLK,1879,Angle Lake,47.42877,-122.285,,Temperature and Lake Level (Recording),350,
+AUB_RAIN,1528,Auburn City Hall Rain Gauge,47.30782,-122.23,Hosted data for City of Auburn,Precipitation Gauge(Recording),100,estimate
+Allen_1,1166,Allen Lk Outlet at NE 8th,47.6165,-122.009,,Stream Gauge(Recording),342,
+BART,1149,Barton Rain Gage - Westside School,47.53276,-122.375,WTD,Precipitation Gauge(Recording),460,iMap 5' contours
+BC0105A,1460,Bear Creek above Evans Confluence,47.6786,-122.093,"Installed for Bear Cr basin plan, 2014",Water Temperature Recorder,50,from iMap 5' contours
+BC0114,1206,Stensland Creek at Evans Creek Trail - Big Bear Cr tributary 0114,47.68484,-122.087,Novelty Hill project,Stream Gauge(Recording),108,imap
+BDIA,664,Black Diamond I&I Rain Gage,47.30523,-122.006,At WTD pump station near Jones Lake,Precipitation Gauge(Recording),,
+BEAR,671,Little Bear I&I Rain Gage,47.79037,-122.133,,Precipitation Gauge(Recording),,
+BELL300LQY300101,1036,Bellevue PS,47.6045,-122.204,,WTD Rain Gage,,
+BOTH,665,Bothell I&I Rain Gage,47.79104,-122.233,elevation 437 feet by topo,Precipitation Gauge(Recording),,
+BSE_1,1718,Boise Creek near Mouth,,,,Stream Gauge(Recording),,
+BVRLK,1868,Beaver Lake,47.59016,-121.998,,Temperature and Lake Level (Recording),410,Topo line iMap
+BW2_Rain,2116,Brightwater rain gage on ground,47.78573,-122.141,New gage at Brightwater campus. On ground. At SW corner of property.,Precipitation Gauge(Recording),183,
+BW_rain,743,Brightwater site rain gage,47.79171,-122.143,,Precipitation Gauge(Recording),170,from topo
+Bellevue-CCF,1542,Coal Creek at Newport Shores - City of Bellevue data,47.57085,-122.187,Data from City of Bellevue,Stream Gauge(Recording),,
+CB-1,1421,Shoreline WQI Site CB-1,,,,Stream Gauge(Recording),,
+CB_MW1,1630,Upstream Levee #2,47.66917,-121.922,Screened Wellpoint,Stream Gauge(Recording),54.16,
+CB_MW2,1631,Middle Floodplain,47.67079,-121.924,Screened wellpoint,Stream Gauge(Recording),54.97,
+CCQ_MW1,1626,Cold Creek Quadrant Wetland,,,Screened Wellpoint,Groundwater Observation Well(Recording),,
+CHRLF_E1,849,Cedar Hills Site E1,47.46683,-122.04,,Stream Gauge(Recording),505.99,"From SWD survey, SWD staff gage"
+CHRLF_E2,848,Cedar Hills Site E2,47.46504,-122.037,Stage only,Stream Gauge(Recording),490.5,"From SWD survey, SWD staff gage"
+CHRLF_MET,843,Cedar Hills Landfill Met Station,47.46277,-122.043,operated by SWD,Weather Station,775,From SWD topo
+CHRLF_N1,834,Cedar Hills Site N1,47.47321,-122.057,,Stream Gauge(Recording),361.26,From SWD Survey
+CHRLF_N4,833,Cedar Hills Site N4,47.47228,-122.053,,Stream Gauge(Recording),473.84,"From SWD survey, NAD83 NVGD 88"
+CHRLF_S1,839,Cedar Hills Site S1,47.45317,-122.051,,Stream Gauge(Recording),485.51,"From SWD survey NAD83, NGVD 88, SWD Staff"
+CHRLF_S2,840,Cdedar Hills Site S2,47.45168,-122.049,,Stream Gauge(Recording),460.77,"From SWD survey NAD83, NGVD 88"
+CHRLF_SW1,842,Cedar Hills Site SW1 CSG,47.45167,-122.056,,Stream Gauge(Recording),494.49,"From SWD survey NAD83, NGVD 88"
+CL_Lake,1573,Cottage lake Level,47.75264,-122.091,bad battery. contact jonathanmorrison@outlook.com before accessing,Stream Gauge(Recording),237.99,top steel pipe
+CL_MET,802,Cold Creek Met Station,47.74987,-122.097,,Weather Station,240,from 5 foot contour map
+COB_06C,1867,Coal Creek below I-405,47.56774,-122.181,above log weirs. operated for City of Bellevue,Stream Gauge(Recording),,
+COB_CCF,1607,City of Bellevue Coal Creek at Skagit Key flow station,47.56961,-122.183,operated for City of Bellevue,Stream Gauge(Recording),,
+COB_GOFF130,1866,Goff Creek at 130th NE,47.63146,-122.166,City of Bellevue hosted data.,Stream Gauge(Recording),,
+COB_KCF,1609,City of Bellevue Kelsey Creek at NE 8th flow staion,47.61748,-122.164,operated for City of Bellevue,Stream Gauge(Recording),124.86,from Bellevue
+COB_MCF,1943,"City of Bellevue Mercer Creek, former USGS 12120000",47.60305,-122.181,operated for City of Bellevue,Stream Gauge(Recording),,
+COB_RG01,1601,City of Bellevue NE 40th Rain Gage,47.64764,-122.145,City of Bellevue hosted data.,Precipitation Gauge(Recording),,
+COB_RG02,1595,City of Belleveu Cherry Crest Rain Gage,47.63205,-122.17,City of Bellevue hosted data.,Precipitation Gauge(Recording),,
+COB_RG03,1599,City of Bellevue Lakemont Rain Gage,47.55794,-122.113,City of Bellevue hosted data.,Precipitation Gauge(Recording),,
+COB_RG04,1594,City of Bellevue BSC rain gage,47.63611,-122.189,City of Bellevue hosted data,Precipitation Gauge(Recording),,
+COB_RG05,1600,Cit of Bellevue Meydenbauer Rain Gage,47.60374,-122.21,City of Bellevue hosted data.KC logger installed 6/3/2020 tele site MEY,Precipitation Gauge(Recording),,
+COB_RG06,1604,City of Bellevue I405 Rain Gage,47.56661,-122.179,City of Bellevue hosted data.,Precipitation Gauge(Recording),,
+COB_RG07,1598,City of Bellevue Forest Hills Rain Gage,47.55278,-122.152,City of Bellevue hosted data. KC logger tele site FORH,Precipitation Gauge(Recording),,
+COB_RG08,1597,City of Bellevue CrossRoads Rain Gage,47.61679,-122.125,City of Bellevue hosted data.,Precipitation Gauge(Recording),,
+COB_RG09,1596,City of Bellevue Cougar Mt. #2 Rain Gage,47.54862,-122.113,City of Bellevue hosted data.,Precipitation Gauge(Recording),,
+COB_RG10,1602,City of Bellevue Parksite Rain Gage,47.56848,-122.147,City of Bellevue hosted data.,Precipitation Gauge(Recording),,
+COB_RG11,1603,City of Bellevue Phantom Lake Rain Gage,47.59555,-122.12,City of Bellevue hosted data.,Precipitation Gauge(Recording),,
+COB_VCF,1606,City of Bellevue Valley Creek Flow Site,47.62504,-122.153,City of Bellevue hosted data.,Stream Gauge(Recording),,
+COB_VasaWLS,1605,City of Bellevue Vasa Creek at West Lk Sammamish,47.57836,-122.114,City of Bellevue hosted data.,Stream Gauge(Recording),,
+COS_Site02,1899,Chestnut Pond Outflow - City of Sammamish Site 2,47.60132,-122.062,,Stream Gauge(Recording),14.2,
+COS_Site05,1917,Crossings at Pine Lake West - City of Sammamish,47.59476,-122.06,,Stream Gauge(Recording),10.17,
+COS_Site06,1901,Crossings at Pine Lake East - City of Sammamish Site 06,47.59467,-122.058,,Stream Gauge(Recording),5.36,
+DR0549,2149,Pump Plant 23 Regional Stormwater Facility,47.50104,-122.323,,Stream Gauge(Recording),328.92,"invert of intake pipe 324.64, from SWS"
+DR0642,1946,Madsen Creek Dam Regional Stormwater Facility,47.45884,-122.147,telemetered water level recorder,Stream Gauge(Recording),441.2,
+DR0657,1875,Rosemont at Timberline Pond,47.65354,-122.066,For SWS,Stream Gauge(Recording),200.3,plans say 199.50
+DSRLK,1898,Lake Desire,47.43869,-122.108,,Temperature and Lake Level (Recording),495,
+ECHLK,1968,Echo Lake,47.77027,-122.344,,Temperature and Lake Level (Recording),398.93,Bob Pendergast
+EDM,2059,Edmonds Rain Gage at Westgate,47.79481,-122.363,,Precipitation Gauge(Recording),,
+EPA06600-CHUC01,1287,Chuckanut Creek,48.70215,-122.485,Still deployed as of 11/26/2013,,,
+ER-11p-12,1433,Elliott Reach Well 11p,47.46802,-122.137,,Groundwater Observation Well(Recording),102.8,top PVC
+ER-1p-12,1425,Elliott Reach Well 1p,47.4678,-122.141,,Groundwater Observation Well(Recording),101.9,top PVC
+ER-5p-12,1428,Elliott Reach Well 5p,47.46823,-122.143,,Groundwater Observation Well(Recording),97.8,top PVC
+Elliott_DN,1213,Elliott Reach Downstream Gage,47.46841,-122.141,Level only,Stream Gauge(Recording),93.91,"top of two inch pipe threads, gps survey 6/14/2012"
+Elliott_UP,1212,Elliott Reach Upstream Gage,47.46787,-122.137,Level only,Stream Gauge(Recording),99.13,"top of vertical sign post, horizontal piece 97.25; gps survey 6/14/2012"
+FACT,652,Factoria I&I Rain Gage,47.58314,-122.158,At KCSW Factoria Transfer Station,Precipitation Gauge(Recording),,
+FREW_01,1746,Tolt Corridor Study River Site 1,47.63771,-121.917,,Stream Gauge(Recording),,"234,494.06003 1,373,223.44908 Foot"
+FREW_02,1747,Tolt Corridor Study River Site 2,47.6383,-121.909,,Stream Gauge(Recording),,"234,683.87472 1,375,272.25210"
+FREW_03,1748,Tolt Corricor Study River Site 3,47.63959,-121.908,,Stream Gauge(Recording),,"235,148.70769 1,375,411.67109"
+FREW_04,1749,Tolt Corricor Study Pond Site 4,47.63975,-121.917,,Stream Gauge(Recording),,
+FREW_05,1750,Tolt Corricor Study Pond Site 5 - Hiway,47.63956,-121.916,,Stream Gauge(Recording),,
+FREW_06,1752,Tolt Corricor Study Pond Site 6,47.63928,-121.916,,Stream Gauge(Recording),,
+FREW_07,1753,Tolt Corricor Study Pond Site 7,47.63932,-121.909,,Stream Gauge(Recording),,
+FREW_08,1754,Tolt Corricor Study Pond Site 8,47.64012,-121.91,,Stream Gauge(Recording),,
+FW_DPC,1588,Federal_Way_356th_discharge_point_to_creek,47.28355,-122.319,Kate MacNeale BMP monitoring project station,Stream Gauge(Recording),,
+FW_EB,1579,Federal_Way_356th_east_bioretention_depth,47.28373,-122.32,Kate MacNeale BMP monitoring project station,Stream Gauge(Recording),,
+FW_EBI,1581,Federal_Way_356th_east_bioretention_inlet,47.28402,-122.319,Kate MacNeale BMP monitoring project station,StCrest/Staff Gauge,,
+FW_EBO,1583,Federal_Way_356th_east_bioretention_outlet,47.28366,-122.319,Kate MacNeale BMP monitoring project station,Stream Gauge(Recording),,
+FW_NFWHC,1587,Federal_Way_North_Fork_West_Hylebos_Creek,47.28005,-122.32,Kate MacNeale BMP monitoring project station,Stream Gauge(Recording),,
+FW_WB,1580,Federal_Way_356th_west_bioretention_depth,47.28302,-122.321,Kate MacNeale BMP monitoring project station,Stream Gauge(Recording),,
+FW_WBI,1582,Federal_Way_356th_west_bioretention_inlet,47.28402,-122.319,Kate MacNeale BMP monitoring project station,Stream Gauge(Recording),,
+FW_WBO,1584,Federal_Way_356th_west_bioretention_outlet,47.28272,-122.321,Kate MacNeale BMP monitoring project station,Stream Gauge(Recording),,
+FW_WPCEBO,1586,Federal_Way_356th_wetland_complex_and_EBO_outlet,47.28361,-122.319,Kate MacNeale BMP monitoring project station,Stream Gauge(Recording),,
+FW_WPCI,1585,Federal_Way_356th_wetland_complex_inlet,47.28529,-122.32,Kate MacNeale BMP monitoring project station,Stream Gauge(Recording),,
+GNVLK,1874,Lake Geneva,47.29129,-122.28,,Temperature and Lake Level (Recording),375,
+GRELK,1862,Green Lake,47.68157,-122.329,,Temperature and Lake Level (Recording),,
+GRT10,607,Green River Temperature at Whitney Bridge,47.28214,-122.054,"Restarted 7/24/2013, def. 50ft US of bridge left Bank",Water Temperature Recorder,,
+GRT40,1246,Green River Temperature Under Interurban Ave. bridge near Fort Dent,47.46539,-122.248,Ecology 2006 TMDL site 09-GRE-FOR,Water Temperature Recorder,,
+GRT41,1247,Green River Temperature Under 42nd Ave. S bridge near Tukwila Community Center,47.49002,-122.28,At Ecology 2006 TMDL study site 09-GRE-COM. On left bank.,Water Temperature Recorder,,
+GSC1,1957,Tolt Girl Scout Camp CSG,47.6408,-121.892,,Stream Gauge(Recording),114.88,
+GSC2,1958,Tolt Girl Scout Camp river,47.64192,-121.892,,Stream Gauge(Recording),118.01,
+GSC3,1959,Tolt Girl Scout Camp flood1,47.64171,-121.892,,Stream Gauge(Recording),116.04,
+GSC4,1961,Tolt Girl Scout Camp flood2,47.64137,-121.895,,Stream Gauge(Recording),104.15,
+GovCan_1,1228,Ellingson Weir Upstream,47.27216,-122.246,"for FCZD, behind 45 degree weir",Stream Gauge(Recording),80.25,"Top weir plate, top pvc 80.73, top boeing 80.25"
+GovCan_2,1229,Ellsington Weir Downstream,47.27212,-122.246,"for FCZD, water level only",Stream Gauge(Recording),83.75,"bottom v-notch weir 73.6, pvc hex 83.75"
+GovCan_3,1230,Government Canal below Butte,47.2584,-122.245,"for FCZD, water level only",Stream Gauge(Recording),72.62,top pvc hex
+HAU2,1517,Hamm Creek Rain - new site,47.51998,-122.309,Replaces HAU,Precipitation Gauge(Recording),30,iMap 5' contours
+HEAT330LQY330101,1015,Heathfield PS,47.57828,-122.124,Site code changed Jan 16 2013 per WTD,WTD Rain Gage,,
+HEND774LQY774101,1018,Henderson PS,47.52312,-122.265,Site Code changed Jan 16 2013 per WTD,WTD Rain Gage,,
+HOLL308LQY308101,1014,Hollywood PS,47.71097,-122.142,Site Code changed Jan 16 2013 per WTD,WTD Rain Gage,,
+HW_92289,1539,Hunters Wood Div 1 Sormwater Facility D92289,47.67621,-122.056,,Stream Gauge(Recording),430,from iMap
+HW_92411,1538,Hunters Wood Div. 1 Stormwater Facility D92411,47.6789,-122.056,,Stream Gauge(Recording),430,from iMap
+JBAY,672,Juanita Bay I&I Rain Gage,47.70555,-122.218,Connected to loggernet via new CR300-210 on 5/20/2020,Precipitation Gauge(Recording),,
+JOYLK,1895,Lake Joy,47.69905,-121.872,,Temperature and Lake Level (Recording),530,
+JanRD_BH5,1931,Jan Road Borehole 5,47.42511,-122.049,16.5' deep,Groundwater Observation Well(Recording),,
+JanRD_H1,1903,Jan Road River Gage H1,47.41832,-122.046,,Stream Gauge(Recording),279.47,top yellow cap 283.14
+JanRD_H2,1902,Jan Road River Gage H2,47.42471,-122.046,,Stream Gauge(Recording),,
+JanRD_H3,1904,Jan Road River Gage H3,47.42472,-122.051,,Stream Gauge(Recording),,
+JanRD_H4,1905,Jan Road River Gage H4,47.42854,-122.053,,Stream Gauge(Recording),,
+JanRD_H6,2115,JanRd Byers Reach at Lyons Camp,47.4359,-122.006,,Stream Gauge(Recording),,
+JanRd_AMW01,2100,JanRd AMW_01,47.42492,-122.046,,Groundwater Observation Well(Recording),,
+JanRd_AMW02,2101,JanRd AMW_02,47.42564,-122.05,,Groundwater Observation Well(Recording),,
+JanRd_AMW03,2114,JanRD AMW 03 Groundwater Well,47.42739,-122.05,,Groundwater Observation Well(Recording),,
+KANG,666,Kent-Kangley I&I Rain Gage,47.35785,-122.133,At Fire Station,Precipitation Gauge(Recording),,
+KIRK,673,Kirkland I&I Rain Gage,47.6823,-122.192,,Precipitation Gauge(Recording),,
+LC_WL01,2102,Lions Camp Water Level Logger,47.43579,-122.056,,Stream Gauge(Recording),,
+LHPS,667,Lakeland Hills - Orovitz Pump Station I&I Rain Gage,47.26995,-122.221,,Precipitation Gauge(Recording),,
+LQF770078VL,1016,Rainier Ave PS,47.56969,-122.291,,WTD Rain Gage,,
+LQF773078VL,1017,East Marginal Way PS,47.5366,-122.318,,WTD Rain Gage,,
+LQF783078VL,1019,East Pine PS,47.61502,-122.281,,WTD Rain Gage,,
+LQF786078VL,1020,Matthews Park PS,47.69645,-122.276,,WTD Rain Gage,,
+LQF788078VL,1021,Kenmore PS,47.75799,-122.253,,WTD Rain Gage,,
+LQF801078VL,1023,King Street RS,47.5983,-122.336,,WTD Rain Gage,,
+LQF806078VL,1024,Chelan RS,47.57261,-122.359,,WTD Rain Gage,,
+LQF813178VL,1025,Denny Way RS,47.61838,-122.36,,WTD Rain Gage,,
+LQF815078VL,1026,Ballard RS,47.66403,-122.382,,WTD Rain Gage,,
+LQF817078,1022,Dexter Avenue Regulator Sta,47.6323,-122.342,,WTD Rain Gage,,
+LQF819078VL,1027,University RS,47.65044,-122.307,,WTD Rain Gage,,
+LRLS_300,2140,Lower Russel Levee Setback 300 foot NTU,47.40156,-122.274,,Stream Gauge(Recording),,
+LRLS_BG,2139,Lower Russel Levee Setback Background NTU,47.39603,-122.273,,Stream Gauge(Recording),,
+LRLS_CP2,2141,Lower Russel Levee Setback Comp. PT 2,47.41284,-122.265,,Stream Gauge(Recording),,
+LT-1,1418,Shoreline WQI Site LT-1,,,,Stream Gauge(Recording),,
+LUCLK,1934,Lake Lucerne,47.36735,-122.05,,Temperature and Lake Level (Recording),,
+LYNN2,1945,Lynnwood I&I Rain gage - New Site,47.83647,-122.273,telemetered site,Precipitation Gauge(Recording),,
+L_1500,2117,Lones NTU 1500 feet,47.27545,-122.119,Turbidity site for Lones,Stream Gauge(Recording),,
+L_1mile,2134,Lones Turbidity 1 mile,47.27558,-122.132,,Stream Gauge(Recording),,
+L_300,2123,Lones NTU 300 feet,47.27526,-122.115,near Lones_05,Crest/Staff Gauge,,
+L_3mile,2133,Lones Turbidity 3 Mile,47.29357,-122.165,,Crest/Staff Gauge,,
+L_6mile,2050,Green River @ Riverview Dr NE,47.321,-122.205,AKA 32E,Stream Gauge(Recording),,
+L_BG,2109,Green River Turbidity above 212th Way SE,47.28187,-122.055,AKA 40T,Stream Gauge(Recording),,
+Lones_02,1758,Lones Levee Burns Creek,47.27721,-122.108,"103,713.66721 1,323,924.66130",Stream Gauge(Recording),113.75,LONES_2 TOP OF STEEL PIPE
+Lones_05,1761,Lones Levee River Site (Coates),47.27503,-122.117,,Stream Gauge(Recording),109.52,LONES_5 TOP OF PIPE/THREADS
+Lones_06,1771,Lones Levee Tree Farm Side Channel,47.27593,-122.118,"3/4"" dia. Steel pipe driven into bed, pvc pipe clamped to it",Stream Gauge(Recording),108.11,LONES_6 TOP OF STEEL PIPE; top of hex fitting on pvc pipe 109.95
+Lones_07,2066,Lones_07,47.27593,-122.111,,Groundwater Observation Well(Recording),,
+MARY,653,Marymoor Park I&I Rain Gage,47.6635,-122.12,By Art Barn in Marymoor Park,Precipitation Gauge(Recording),30,
+4-May,1096,MAY4 - May Cr ab 148th AV SE,47.51172,-122.136,upstream end of bridge at Red Barn,Stream Gauge(Recording),315.09,Top PVC. B. Pendergast survey
+MAY_GW_1_BCB334,1111,May Valley Monitoring Well 1,47.51493,-122.143,,Groundwater Observation Well(Recording),,
+MAY_GW_2_BCB335,1110,May Valley Monitoring Well 2,47.51582,-122.143,,Groundwater Observation Well(Recording),313.01,top PVC. B. Pendergast survey
+MAY_GW_3_BCB336,1112,May Valley Monitoring Well 3,47.51322,-122.137,,Groundwater Observation Well(Recording),314.95,Top PVC. B.Pendergast survey
+MAY_GW_4_BCB337,1113,May Valley Monitoring Well 4,47.51096,-122.137,,Groundwater Observation Well(Recording),315.79,Top PVC. B. Pendergast survey
+MAY_GW_5_BCB338,1114,May Valley Monitoring Well 5,47.51003,-122.134,,Groundwater Observation Well(Recording),316.23,Top PVC. B. Pendergast survey
+MBW_S1,1519,Middle Boise Van Wieringen Stream 1,47.19038,-121.985,Upstream gage,Stream Gauge(Recording),743.72,"top PVC pipe, cap off"
+MBW_S2,1520,Middle Boise Van Wieringen Stream 2,47.19065,-121.988,Middle stream gage,Stream Gauge(Recording),736.56,"top PVC pipe, cap off"
+MBW_S3,1521,Middle Boise Van Wieringen Stream 3,47.18952,-121.991,Lower stream gage,Stream Gauge(Recording),738.74,"Top of PVC pipe, cap off"
+MB_MW1,1637,Middle Boise New Channel in creek by LWD,47.19005,-121.983,Screened Wellpoint,Stream Gauge(Recording),745.19,TOP OF CAP 745.19; TOP OF PIPE 745.19 ; WS 1/17/2014 12:45 742.07
+MC-1,1417,Shoreline WQI Site MC-1,,,,Stream Gauge(Recording),,
+MCSN,670,Martha Lake I&I Rain Gage,47.85867,-122.239,,Precipitation Gauge(Recording),,
+MED,1028,Medina PS,47.61708,-122.232,Site Code changed Jan 16 2013 per WTD,WTD Rain Gage,,
+MERC,651,Mercer Island I&I Rain Gage,47.57218,-122.224,At Mercer Is School District Administratio offices,Precipitation Gauge(Recording),,
+MFK_01,1797,Middle Fork at end of Copper Queen Rd.,47.49918,-121.376,On MFK of Sno ~50m DS of camp at end of Copper Queen Rd. Riv right.,Water Temperature Recorder,,
+MFK_03,1799,Middle Fork just upstream of footbridge to Goldmyer,47.48816,-121.388,"about 50m US of footbride on riv right. Just off trail, behind boulder",Water Temperature Recorder,,
+MFK_04,1800,Middle Fork just below Burntboot overflow channel,47.48621,-121.401,"On riv right, just DS of side channel confl w main channel.",Water Temperature Recorder,,
+MFK_05,1801,Middle Fork by abandoned road campsite,47.48787,-121.415,DS of campsite at terminus of decom rd off FS rd 5620. On river right.,Water Temperature Recorder,,
+MFK_06,1802,Middle Fork under maple on FS 5620 Rd,47.49053,-121.43,On MFK where 5620 Rd abuts river. Under big maple on armored R bank.,Water Temperature Recorder,,
+MFK_06b,1872,Middle Fork above Dingford,47.49881,-121.446,on river right. About 1.2 miles from gate. In outside bend.,Water Temperature Recorder,,
+MFK_06c,2108,Middle Fork below Dingford,,,Installed by D. Restivo of USGS. Exact location details TBD.,Water Temperature Recorder,,
+MFK_06d,1928,Middle Fork above Taylor,47.54493,-121.526,See field sheet and pics for detailed location information.,Water Temperature Recorder,,
+MFK_07,1815,Middle Fork just DS of Taylor,47.54719,-121.537,"Cross foot bridge, walk 50m US on left bank. Anchored to boulders.",Water Temperature Recorder,,
+MFK_08,1813,Middle Fork on Oxbow Trail,47.51311,-121.606,Take Oxbow trail to river. Look for boulder with beached root wad.,Water Temperature Recorder,,
+MFK_10,1821,Middle Fork at Mailbox Trailhead,47.47022,-121.674,"Call Margaret Henry (802-230-5193) before visit. Park there, take trail.",Water Temperature Recorder,688,feet. From gps
+MFK_11,1816,Middle Fork at Tanner Rd,47.47601,-121.745,At start of Tanner Rd near N Bend Wy. Anchored to big leaf maple.,Water Temperature Recorder,,
+MFK_12,1817,Middle Fork at 428th Ave,47.51621,-121.77,,Water Temperature Recorder,,
+MFK_GMY_ATC,1794,Air temperature logger on Goldmyer property,47.48451,-121.393,Just downstream of washed out Middle Fork trail bridge over Burntboot Cr,Weather Station,,
+MINA_MW01,1627,Middle Issaquah Natural Area Instream south side of Issaquah Creek,47.46106,-122.021,Screened Wellpoint,Stream Gauge(Recording),302.19,top of pipe. 2017 survey. Ground = 299.88. 2015 Bob P survey ele 302.23
+MINA_MW03,1628,Middle Issaquah Natural Area Wet Swale just north of Creek,47.4613,-122.021,Screened Wellpoint,Stream Gauge(Recording),303.79,top of pipe
+MINA_MW05,1726,Middle Issaquah Natural Area Wetland in parcel 9122,47.46164,-122.024,,Stream Gauge(Recording),299.97,
+MINA_MW06,1727,Middle Issaquah Natural Area Wetland in North side of parcel,47.46169,-122.022,,Stream Gauge(Recording),301.97,ground at well 298.67; 2017 survey
+MINA_MW11,1776,Middle Issaquah,,,,Stream Gauge(Recording),303.14,MW/WELL 11 TOP OF CAP; GD/WELL 11 +2.6' TO TOP CAP (300.54)
+MINA_MW12,1974,Replaces WM_7,47.46135,-122.022,,Stream Gauge(Recording),299.43,
+MINA_MW13,1948,Middle Issaquah Creek; Replaces MINA_MW8,47.46129,-122.023,,Stream Gauge(Recording),,
+MINA_MW14,1969,Replaces MW9,47.46176,-122.024,,Stream Gauge(Recording),,
+MNCR,668,North Creek Maltby I&I Rain Gage,47.82395,-122.195,,Precipitation Gauge(Recording),,
+MORLK,1933,Morton Lake,47.32671,-122.085,,Temperature and Lake Level (Recording),,
+MRCLK,1896,Lake Marcel,47.69756,-121.917,,Temperature and Lake Level (Recording),290,
+MRGLK,1873,Lake Margaret,47.76761,-121.9,,Temperature and Lake Level (Recording),810,
+MS002,752,Pierce County Clover Test 02,,,,Water Temperature Recorder,,
+MS006,753,Pierce County Test 06,,,,Water Temperature Recorder,,
+McElhoe_1,1106,Snoqualmie River at McElhoe Projec,47.6583,-121.925,level only,Stream Gauge(Recording),55.27,"top pipe w/o cap, from Tensing spreadsheet"
+McElhoe_2,1634,Scour Pool #2,,,Screened Wellpoint,Stream Gauge(Recording),53.6,"top cap, from Tensing spreadsheet"
+McElhoe_3,1635,Backwater Area #2,,,Screened Wellpoint,Stream Gauge(Recording),52.21,"top cap, from Tensing spreadsheet"
+McElhoe_4,1636,Low Flow Wetland,,,Screened Wellpoint,Stream Gauge(Recording),53.57,"top cap, from Tensing spreadsheet"
+NB1,1953,North Bend flood 1 at Ballarat,47.49882,-121.78,,Stream Gauge(Recording),440.9,
+NB2,1954,North Bend flood at 420th,47.50494,-121.78,,,,
+NB3,1955,North Bend flood at Pickett,47.50087,-121.769,,Stream Gauge(Recording),443.6,
+NB4,1956,North Bend flood at Zemp,47.49244,-121.769,,,455.37,
+NCRK311LQY311101,1029,North Creek,47.76301,-122.184,Site Code changed Jan 16 2013 per WTD,WTD Rain Gage,,
+NFK_01,1857,North Fork above canyon,47.5525,-121.712,,Water Temperature Recorder,947,
+NOAA_B1,1985,Lake 3 Trib,47.50404,-121.884,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_C1,1986,Cherry Creek,47.74316,-121.906,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_C2,1987,Lower Cherry Creek,47.74355,-121.941,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_D1,1984,Dingford Creek,47.5165,-121.452,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_E1,1988,Deep Creek,47.48189,-121.894,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_F1,1989,Griffin Creek,47.6158,-121.904,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_G1,1990,Granite Creek,47.49404,-121.641,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_I1,1991,Icy Creek,47.53018,-121.918,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_K1,1992,Tokul Creek,47.5561,-121.819,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_L1,1993,Lake 3 Above Trib,47.50404,-121.884,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_L2,1994,Lake 3 Below Trib,47.50404,-121.884,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_L3,1995,Lake Lower,47.50404,-121.904,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_M1,1996,Soderman Creek,47.52103,-121.929,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_MF1,1997,MF Sno at Dingford,47.51681,-121.456,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_MF2,1998,MF Sno at decommissioned road,47.534,-121.58,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_MF3,1999,MF Sno at Granite,47.495,-121.637,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_MF5,2001,MF Sno at Mt Si Rd,47.48669,-121.758,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_MF6,2002,MF Sno at 3 Forks,47.52267,-121.78,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_MS10,2003,Snoqualmie Mainstem Lowest,47.80373,-122.003,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_MS4,2004,Snoqualmie Mainstem at Meadowbrook,47.52726,-121.811,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_MS5,2005,Snoqualmie Mainstem above Raging River,47.56751,-121.879,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_MS6,2006,Snoqualmie Mainstem at Boat Launch,47.597,-121.914,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_MS8,2008,Snoqualmie Mainstem downstream of Tolt,47.64385,-121.926,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_MS9,2009,Snoqualmie Mainstem at Chinook Bend,47.66377,-121.926,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_NF1,2010,NF Sno Headwaters,47.66302,-121.578,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_NF2,2011,NF Sno above Sunday,47.65587,-121.642,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_NF3,2012,NF Sno at County Bridge,47.64165,-121.681,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_NF4,2013,NF Sno at 3 Forks,47.52196,-121.77,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_R1,2014,Raging River Headwaters,47.4325,-121.856,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_R2,2015,Raging River at Powerlines,47.48595,-121.888,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_R3,2016,Raging River at Private Bridge,47.48896,-121.897,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_R4,2017,Raging River at I-90,47.51781,-121.925,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_R5a,2018,Raging River Cluster Upper,47.56347,-121.891,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_R5b,2019,Raging River Cluster Middle,47.56444,-121.888,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_R5c,2020,Raging River Mouth,47.56509,-121.886,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_S1,2021,Sunday Creek,47.65548,-121.64,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_SF1,2022,SF Sno at Asahel,47.3944,-121.475,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_SF2,2023,SF Sno at Exit 38,47.4316,-121.636,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_SF3,2024,SF Sno 436th Ave Bridge,47.46624,-121.759,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_T1,2025,Tolt River Lower,47.6725,-121.855,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_T4,2027,Tolt - North Fork Creek,47.7096,-121.814,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_X1,1983,Lennox Creek,47.65602,-121.574,NOAA Snoqualmie Temperature Network - contact: aimee.fullerton@noaa.gov,Water Temperature Recorder,,
+NOAA_Y1,1982,Taylor River,47.56254,-121.53,NOAA Snoqualmie Temperature Network - Contact aimee.fullerton@gmail.com,Water Temperature Recorder,,
+NOVH,654,Novelty Hill I&I Rain Gage,47.69184,-122.089,,Precipitation Gauge(Recording),,
+NWP,871,Northwest Ponds Level ( Des Moines Creek ),47.4275,-122.311,,Stream Gauge(Recording),248.09,"from as built survey point, top of staff post = 248.09"
+PL_MW1,1610,Outlet backwater east of ABD Road,47.29937,-122.174,Screened Wellpoint,Stream Gauge(Recording),73.91,"Bob P GPS survey, top coupling"
+PL_MW2,1611,Road west of Green Valley Road in backwater,47.29917,-122.174,Screened Wellpoint,Stream Gauge(Recording),74.77,"Bob P GPS survey, top of coupling"
+PL_MW3,1612,Green Valley Meats in backwater east of road,47.29643,-122.173,,Stream Gauge(Recording),75.57,"Bob P GPS survey, top of coupling"
+PL_MW4,1621,Upper Levee at Moseby Farm,47.2935,-122.167,,Stream Gauge(Recording),83.02,"Bob P GPS survey, top of pipe"
+PNELK,1871,Pine Lake,47.58807,-122.049,,Temperature and Lake Level (Recording),385,
+PRT_01,1820,Pratt at Mouth,47.52556,-121.586,"walk up from confl, above LWD jam on right bank. Anchored to alder.",Water Temperature Recorder,905,feet. From GPS
+RB_DOWN,1101,Rainbow Bend Downstream,47.445,-122.069,stage only,Stream Gauge(Recording),211.21,"KC survey, top sign post NAVD88"
+RB_GW01,2058,Rainbow Bend Well 1,47.4409,-122.065,,Groundwater Observation Well(Recording),111.39,
+RB_GW04,2053,Rainbow Bend Well 04,47.44187,-122.066,,Groundwater Observation Well(Recording),218.88,
+RB_GW05,2054,Rainbow Bend Well 5,47.44263,-122.068,,Groundwater Observation Well(Recording),217.65,
+RB_GW06,2055,Rainbow Bend Well 6,47.44298,-122.07,,Groundwater Observation Well(Recording),215.71,
+RB_GW07,2056,Rainbow Bend Well 7,47.4445,-122.07,,Groundwater Observation Well(Recording),211.58,
+RB_GW08,2057,Rainbow Bend Well 8,47.44379,-122.069,,Groundwater Observation Well(Recording),,
+RB_GW09,2099,Rainbow Bend Groundwater Well 09,47.44253,-122.069,,Groundwater Observation Well(Recording),217.39,
+RB_GW10,2097,Rainbow Bend Ground Water Well 10 TP_2020_01,47.44352,-122.07,,Groundwater Observation Well(Recording),,
+RB_GW13,2098,Rainbow Bend Groundwater Well 13 TP_2020_03,47.44147,-122.069,,Stream Gauge(Recording),,
+RB_UP,1099,Rainbow Bend Upstream,47.4398,-122.066,stage only,Stream Gauge(Recording),223.17,"KC Survey, top pink cap, NAVD88"
+RB_WL11,2095,Rainbow Bend Water Level Site 11,47.4424,-122.067,,Stream Gauge(Recording),,
+RB_WL12,2096,Rainbow Bend Water Level Site 12,47.44319,-122.07,,Stream Gauge(Recording),,
+RB_WL14,2110,Rainbow Bend Side Channel Staff Plate Downstream,47.4453,-122.068,,Stream Gauge(Recording),,
+RB_WL15,2113,Rainbow Bend Side Channel Staff Plate Downstream,47.44215,-122.066,,Stream Gauge(Recording),,
+RIV_BEND_GW2,1563,River Bend Monitoring Well 2,47.46385,-122.112,tag BJX 718,Groundwater Observation Well(Recording),139.18,"top casing, top cover 140.14"
+RIV_BEND_GW4,1564,River bend Monitoring Well 4,47.46543,-122.119,BJX 721,Groundwater Observation Well(Recording),123.19,"top casing, top cover 123.51"
+RIV_BEND_GW5,1565,River Bend Monitoring Well 5,47.46525,-122.108,BJX 720,Groundwater Observation Well(Recording),139.87,"top casing, top cover 140.21"
+RP,1962,River Point D91818 Inlet,47.48401,-121.715,,Stream Gauge(Recording),,
+RPWS_COLM,1555,Colin Creek Midpoint Station - Redmond Paired Watershed Study,47.71464,-122.04,"Redmond Paired Watershed Study, new 02D Site",Stream Gauge(Recording),,
+RPWS_COUMI,1553,Country Creek Midpoint Station - Redmond Paired Watershed Study,47.64947,-122.116,Redmond Paired Watershed Study,Stream Gauge(Recording),,
+RPWS_COUMO,1545,Country Creek near Mouth - Redmond Paired Watershed Study,47.65056,-122.115,for Redmond Paired Watershed Study,Stream Gauge(Recording),,
+RPWS_EVALSS,1547,Evans tributary 108 - Redmond Paired Watershed Study,47.675,-122.073,for Redmond Paired Watershed Study,Stream Gauge(Recording),,
+RPWS_EVAMS,1550,Evans trib 108 Midstream Station - Redmond Paired Watershed Study,47.67329,-122.063,Redmond Paired Watershed Study. CONTACT KATE M. OR BETH S. IF REMOVED!,Stream Gauge(Recording),,
+RPWS_MONMN,1551,Monticello North Midpoint Station,47.70605,-122.102,,Stream Gauge(Recording),,
+RPWS_MONMO,1708,"Monticello Creek near Mouth, also BC0119",47.7035,-122.093,"for Redmond Paired Watershed Study, initially for Bear CR basin plan",Stream Gauge(Recording),,
+RPWS_MONMS,1552,Monticello Creek South Midpoint Station,47.70369,-122.103,,Stream Gauge(Recording),,
+RPWS_RG_EVA,1709,Evans 108 Rain Gage,47.67891,-122.056,"for RPWS, in Stormwaer Pond D-92411 Hunterswood Div 2&3",Precipitation Gauge(Recording),425,from 5' contours
+RPWS_RG_MON,1707,Monticello Rain Gage,47.70362,-122.106,For RPWS,Precipitation Gauge(Recording),,
+RPWS_RG_TOS,1710,Tosh Creek Rain Gage,47.65606,-122.124,for RPWS,Precipitation Gauge(Recording),,
+RPWS_SEIMN,1692,Seidel Creek North Site - Redmond Paired Watershed Study - formerly 02o,47.71171,-122.052,for Redmond Paired Watershed Study,Stream Gauge(Recording),,
+RPWS_SEIMS,1693,"South Fork Seidel Creek at Headworks, RPWS_SEIMS (02P)",47.70716,-122.054,for Redmond Paired Watershed Study,Stream Gauge(Recording),,
+RPWS_TOSMI,1548,Tosh Creek Upper Site - Redmond Paired Watershed Study,47.65169,-122.125,for Redmond Paired Watershed Study,Stream Gauge(Recording),155,
+RPWS_TOSMO,1544,Tosh Creek near Mouth - Redmond Paired Watershed Study,47.6546,-122.118,for Redmond Paired Watershed Study,Stream Gauge(Recording),,
+RPWS_TYLMI,1554,Tyler's Creek Midpoint Station - Redmond Paired Watershed Study,47.698,-122.097,Redmond Paired Watershed Study,Stream Gauge(Recording),,
+RPWS_TYLMO,1546,Tyler's Creek near Mouth - Redmond Paired Watershed Study,47.69641,-122.094,for - Redmond Paired Watershed Study,Stream Gauge(Recording),,
+RP_WL,1963,River Point Pond D91818 water Level,47.48539,-121.716,,Stream Gauge(Recording),,
+RTLK,1967,Lake Retreat,47.35077,-121.943,,Temperature and Lake Level (Recording),735.69,Bob Pendergast
+RUT_JO_W1,1937,Rutledge - Johnson Well 1,47.42299,-122.048,,Stream Gauge(Recording),264.83,
+RUT_JO_W2,1935,Rutledge - Johnson Well 2,47.42368,-122.049,,Stream Gauge(Recording),262.09,
+RUT_JO_W3,1936,Rutledge - Johnson Well 3,47.42424,-122.048,,Stream Gauge(Recording),263.95,
+RUT_JO_W4,1938,Rutledge - Johnson Well 4,47.42341,-122.047,,Stream Gauge(Recording),262.5,
+Riv_Bend_6.2,1560,Rivers Bend of the Cedar RM 6.2,47.46541,-122.126,"Hobo U20 on PVC slide in 2"" angled steel well anchored to armoring rocks",Stream Gauge(Recording),107.45,anchor bolt on US side of rock to which gage is attaced
+Riv_Bend_6.5,1561,Rivers Bend of the Cedar RM 6.5,47.46352,-122.121,"Hobo U20 hanging from wire in 2"", 5.09 vertical steel well",Stream Gauge(Recording),115.35,casing top (top of bracket - 112.96)
+Riv_Bend_7.3,1558,Rivers Bend of the Cedar RM 7.3,47.46626,-122.108,"Hobo hanging from wire in 2"", 4.09' vertical steel well",Stream Gauge(Recording),135.64,casing top (133.08 bracket top)
+SAFC_01,1469,Snoqualmie River at Neal Rd,47.57578,-121.896,Water Level only,Stream Gauge(Recording),85.35,Top of pipe 1/26/2015
+SAFC_02,1470,Snoqualmie River at Barfuse Levee,47.5718,-121.894,,Stream Gauge(Recording),86.15,MW SAFC_02 TOP OF PIPE
+SAFC_03,1473,Snoqualmie River by Janicke Slough,47.59504,-121.916,,Stream Gauge(Recording),69.55,"top of pipe, 1/26/2015"
+SAFC_04,1472,Snoquamie River at Alm Property,47.57704,-121.903,,Stream Gauge(Recording),79.85,"Top of pipe,"
+SAFC_05,1543,Carlson LB_Top,47.58169,-121.906,For Upper Carlson,Stream Gauge(Recording),,
+SAFC_06,1638,Aldair,47.58126,-121.907,Screened Wellpoint,Stream Gauge(Recording),77.5,from Cody T
+SAFC_07,1639,Carlson Outlet,47.58499,-121.911,Screened Wellpoint,Stream Gauge(Recording),76.76,"from Cody T,73.46 raised 3.3 feet on 6/14/2016"
+SAFC_07a,1719,SAFC Carlson Outlet - Upper,47.58526,-121.91,Upper side channel to check hydraulics,Stream Gauge(Recording),,
+SAFC_08,1640,Carlson Upper Floodplain,47.58288,-121.901,Screened Wellpoint,Stream Gauge(Recording),77.56,from Cody T
+SAFC_09,1641,Richmond,47.5844,-121.912,Screened Wellpoint,Stream Gauge(Recording),77.36,From Cody T
+SAFC_10,1642,Rutherford Outlet Bridge,47.57487,-121.891,Screened Wellpoint,Stream Gauge(Recording),85.12,from Cody T
+SAFC_11,1643,Alm Backwater - see site WL5387_OL,,,Screened Wellpoint,Groundwater Observation Well(Recording),81.28,
+SAFC_25,1926,Snoqualmie at Falls City Neal Road Logger,47.57972,-121.898,,Stream Gauge(Recording),,
+SAFC_26,1927,Snoqualmie at Falls City Floodplain,47.58174,-121.903,,Stream Gauge(Recording),,
+SAFC_27,1964,Creek at Neil Road Bridge 239B,47.58543,-121.904,,Stream Gauge(Recording),,
+SAFC_28,1965,Falls City Farms Pond,47.57732,-121.896,,Stream Gauge(Recording),,
+SAFC_29,1966,SR203 at WSDOT Bridge Gage on North Side of Bridge,47.58459,-121.9,,Stream Gauge(Recording),,
+SAHA,675,Sahale I&I Rain Gage,47.64949,-122.044,,Precipitation Gauge(Recording),,
+SAMM_L1a,2077,Woodinville - lil bear - deep,47.75626,-122.172,,Groundwater Observation Well(Recording),31.33,
+SAMM_L1b,2078,Woodinville - lil bear,47.75622,-122.172,,Groundwater Observation Well(Recording),31.45,
+SAMM_L2a,2079,Woodinville - park,47.75077,-122.165,,Groundwater Observation Well(Recording),32.05,
+SAMM_L2b,2080,Woodinville - park - deep,47.75074,-122.165,,Groundwater Observation Well(Recording),31.75,
+SAMM_M1b,2071,Marymoor - dog park,47.65696,-122.114,,Groundwater Observation Well(Recording),37.12,Top of casing
+SAMM_M2a,2072,"Marymoor - bird area - 6""",47.65813,-122.111,,Groundwater Observation Well(Recording),37.82,
+SAMM_M2b,2073,Marymoor - bird area,47.65813,-122.111,,Groundwater Observation Well(Recording),37.46,
+SAMM_M3,2074,Marymoor - velodrome,47.66238,-122.111,,Groundwater Observation Well(Recording),38.62,
+SAMM_M4,2075,Marymoor - airplane field,47.66037,-122.107,,Groundwater Observation Well(Recording),40.27,
+SAMM_MW_B-1,1242,Marymoor Well B-1,47.6583,-122.12,Ecology ID 307886; Tag ID AFM764,Groundwater Observation Well(Recording),35.43,"from survey, top of PVC"
+SAMM_MW_B-3,1244,Marymoor Well B-3,47.65793,-122.121,Ecology ID 307884; Tag ID AFM766,Groundwater Observation Well(Recording),37.58,"from survey, top of PVC"
+SAMM_MW_B-5,1245,Marymoor Well B-5/AB-5,47.65913,-122.122,Ecology ID 307901; Tag ID AFM787,Groundwater Observation Well(Recording),37.4,"from survey, top of PVC"
+SAMM_MW_B-6,1349,Marymoor Well B-6,47.65868,-122.121,Willowmoor,Groundwater Observation Well(Recording),38.01,"from survey, top of PVC"
+SAMM_MW_P-1,1441,Willowmoor GW Well P-1,47.65599,-122.115,"gound = 35.29', well bottom 31.89'",Groundwater Observation Well(Recording),36.18,from survey
+SAMM_MW_P-2,1442,Willowmoor GW Well P-2,47.65588,-122.115,"ground = 36.65', well bottom 33.30'",Groundwater Observation Well(Recording),37.59,from survey
+SAMM_MW_P-3,1443,Willowmoor GW Well P-3,47.65576,-122.116,"gound = 37.61', well bottom 34.29'",Groundwater Observation Well(Recording),38.58,from survey
+SAMM_TZ_5,2060,Sammamish Below NE 95th,47.68241,-122.132,level only,Stream Gauge(Recording),,
+SAMM_W1b,2081,Willows Run - west,47.70411,-122.152,,Groundwater Observation Well(Recording),31.9,
+SAMM_W2b,2082,Sixty Acres,47.70197,-122.143,,Groundwater Observation Well(Recording),35,TOC; stickup = 1.5'
+SAMM_W4a,2083,Willows Run - east - deep,47.70203,-122.144,,Groundwater Observation Well(Recording),36.4,
+SAMM_W4b,2084,Willows Run - east,47.70199,-122.144,,Groundwater Observation Well(Recording),35.7,
+SAMM_W7a,2085,Hmong Farm,47.72517,-122.142,,Groundwater Observation Well(Recording),31.83,TOC; stickup = 2.4'
+SAMM_W7b,2086,"Hmong Farm - 6""",47.7252,-122.142,,Groundwater Observation Well(Recording),32.11,TOC; stickup = 3.0'
+SAMP,676,Sammamish Plateau I&I Rain Gage,47.58047,-122.025,,Precipitation Gauge(Recording),,
+SAMP_DUMMY,1922,test samp,,,test site for shadow,Precipitation Gauge(Recording),,
+SBI_01,1411,Patterson Creek at Bridge 344,47.58721,-121.929,,Stream Gauge(Recording),,
+SEQU,648,Sequoia JR High School I&I Rain Gage,47.36701,-122.193,,Precipitation Gauge(Recording),,
+SERE,1236,Lake Serene I&I Rain Gage,47.87185,-122.292,,Precipitation Gauge(Recording),,
+SFK_01a,1823,South Fork above Franklin Falls,47.42666,-121.429,,Water Temperature Recorder,,
+SFK_01b,1824,South Fork below Carter Ck.,47.39376,-121.542,Walk down Carter to SF. DS on left bank. Weaved through roots on alder,Water Temperature Recorder,1650,
+SFK_02,1819,South Fork at Tinkham Rd,47.41509,-121.587,On DS edge of Tinkham bridge; right bank.,Water Temperature Recorder,,
+SFSnqCRR,1886,South Fork Snoqualmie at Circle R Ranch,47.50869,-121.786,,Stream Gauge(Recording),425,
+SGW1,2043,Seawest Granston well 1,47.73024,-122.07,,,,
+SGW2,2044,Seawest Granston well 2,47.73024,-122.07,,,,
+SGW3,2045,Seawest Granston well 3,47.72906,-122.071,,Groundwater Observation Well(Recording),,
+SGW4,2048,Seawest Granston well 4,47.72906,-122.071,,,,
+SGW5,2047,Seawest Granston well 5,47.72906,-122.07,,Groundwater Observation Well(Recording),,
+SNO_03,2103,Snoqualmie Upstream of SAFC_01,47.57475,-121.895,,Stream Gauge(Recording),,
+SNO_04,2104,Snoqualmie at 202 Bridge,47.5688,-121.887,,Stream Gauge(Recording),,
+SP.QB174390,1037,South Plant,47.4687,-122.24,,WTD Rain Gage,,
+SPGLK,1897,Spring Lake,47.43914,-122.089,,Temperature and Lake Level (Recording),470,
+SPU_STA098A,1676,Longfellow Creek (26TH Ave SW & SW Oregon Street) Seattle Public Utilities site,47.56258,-122.367,Seattle Public Utilities hosted data,Stream Gauge(Recording),,
+SPU_STA099,1677,Longfellow Creek (24TH Ave SW & SW Willow Street) Seattle Public Utilities site,47.54144,-122.363,Seattle Public Utilities hosted data,Stream Gauge(Recording),,
+SPU_STA401,1678,Taylor Creek (68TH Ave S) Seattle Public Utilities site,47.5104,-122.248,Seattle Public Utilities hosted data,Stream Gauge(Recording),,
+SPU_TAYEF403,2068,"Taylor Creek, East Fork",47.50311,-122.246,SPU Collected. Still waiting for data.,Stream Gauge(Recording),,
+SPU_TAYMA402,2069,"Taylor Creek, Main",47.5032,-122.247,SPU Collected. Still waiting for data.,Stream Gauge(Recording),,
+SPU_TAYWF404,2070,"Taylor Creek, West Fork",47.50315,-122.247,SPU Collected. Still waiting for data.,Stream Gauge(Recording),,
+SPWA_CLS_Rain,1696,Sammamish Plateau Water Central Lake Sammamish Rain Gage,47.57861,-122.074,data hosted,Precipitation Gauge(Recording),,
+SPWA_Headquarters_Rain,1694,Sammamish Plateau Water Association Headquarters Rain Gauge,47.59614,-122.035,Data hosted,Precipitation Gauge(Recording),,
+SPWA_Well2_Rain,1695,Sammamish Plateau Water Association Well 2 Rain Gage,47.58025,-122,data hosted,Precipitation Gauge(Recording),,
+SR_Reinig_B1,1825,Reinig Road Monitoring Well B1 BKZ 554,,,,Groundwater Observation Well(Recording),,
+SR_Reninig_B2,1826,Reinig Road Monitoring Well B2 BKZ 553,,,,Groundwater Observation Well(Recording),,
+ST-2,1478,Shoreline WQI Site ST-2,,,,Stream Gauge(Recording),,
+SUMM,647,Summit Weather Station,47.35771,-122.036,,Precipitation Gauge(Recording),,
+SYRLK,1932,Lake Sawyer,47.34124,-122.05,,Temperature and Lake Level (Recording),523.56,Bob Pendergast
+Samm_TZ_1,1207,Sammamish River Transition Zone Below Weir,47.65832,-122.118,level only gage,Stream Gauge(Recording),31.43,"fence post. 31.43 NAVD 88.DEF & BG survey 5/23/2014, based on 51M staff 0 = 26.50'"
+Samm_TZ_2,1208,Sammamish River Transition Zone Mid,47.65917,-122.12,level only,Stream Gauge(Recording),28.41,"fence post. NAVD 88. Top threads 29.03,DEF & BG survey 5/23/2014,based on 51M staff 0 = 26.50'"
+Samm_TZ_3,1209,Sammamish River above Bear Creek,47.6674,-122.126,level only,Stream Gauge(Recording),25.82,"NAVD 88. Top threads 25.82, Bob Pendergast survey 2/12/2014"
+Samm_TZ_4,1210,Sammamish River Below Bear Creek,47.66825,-122.127,level only,Stream Gauge(Recording),25.12,"NAVD 88. Top threads 2"" pipe in river 25.12, Bob Pendergast survey 2/12/2014"
+Sgmid,2049,Seawest Granston mid stream elevation,47.72909,-122.071,,Stream Gauge(Recording),148,
+Sgup,2042,Seawest Granston upper site stream elev,47.7318,-122.071,Bear Creek elevation,Stream Gauge(Recording),153,
+SnqDutchDwn,2164,Dutchman Flapgate down,47.75841,-121.987,,Stream Gauge(Recording),33.31,
+SnqDutchUp,2163,Dutchman flapgate up,47.7586,-121.987,,Stream Gauge(Recording),34.44,
+SnqRM41.7,1764,Snoq. River Reinig RD RM 41.7,47.5257,-121.787,,Stream Gauge(Recording),413,top of pipe
+SnqRM41.7_B1,1877,Reinig Well B1,47.52554,-121.786,,Groundwater Observation Well(Recording),421.98,
+SnqRM41.7_B2,1876,Reinig Well B2,47.52538,-121.785,,Groundwater Observation Well(Recording),423.06,
+Snqat124Bridge,1220,Snoqualmie at NE 124th bridge,47.70899,-121.995,,Stream Gauge(Recording),30.56,survey
+TAY_1,1697,Taylor MRP Creek Site,47.41436,-122.041,,Stream Gauge(Recording),288.03,TAY_1 MW TOP OF PIPE/THREADS 288.03
+TAY_3,1699,Taylor MRP MW Ditch Site,47.41447,-122.04,,Groundwater Observation Well(Recording),288.88,TAY_3 MW TOP OF PIPE/THREADS 288.88
+TAY_5,1701,Taylor MRP MW Pond Site,47.41506,-122.04,,Groundwater Observation Well(Recording),288.25,TAY_5 MW TOP OF PIPE/THREADS 288.25
+TAY_6,1702,"Taylor MRP MW West, Old Barn Site",47.41516,-122.041,,Groundwater Observation Well(Recording),287.88,TAY_6 MW TOP OF PIPE/THREADS 287.88
+TAY_7B,1706,Taylor MRP Vallejo Pond Staff Gage,47.41337,-122.04,,Groundwater Observation Well(Recording),288.63,289.17  TAY_7B WS 10/11/16 14:45 READS 0.54
+TAY_7E,1736,Vallejos Taylor Creek #2,47.41344,-122.04,replaced washed out or stolen well in same location,Stream Gauge(Recording),291.23,"TAY_7E TOP OF PIPE/THREADS, GROUND AT MW 289.7"
+TEST_3,2148,,,,,Stream Gauge(Manual Only),,
+TH-1,1256,Shoreline WQI Site TH-1,,,,Stream Gauge(Recording),,
+TUKW,650,Tukwilla I&I Rain Gage,47.44845,-122.255,,Precipitation Gauge(Recording),,47.44845125 122.2547848
+Tay11,1864,Vallejo Lawn Low Point,47.41382,-122.041,,Stream Gauge(Recording),,
+Test,636,Test for temp data test,47.24001,-122.361,Test site for temporary data work ups. Test,Groundwater Observation Well(Recording),100,NA
+Tolt1,1191,Lower Tolt 1,47.64391,-121.925,Tolt River Corridor Study Tolt McDonald Park,Stream Gauge(Recording),62.34,survey
+Tolt10,1200,Lower Tolt 10,47.67247,-121.855,Tolt River Corridor Study,Stream Gauge(Recording),231.44,survey
+Tolt2,1192,Lower Tolt 2,47.63856,-121.921,Tolt River Corridor Study,Stream Gauge(Recording),72.38,survey
+Tolt3,1193,Lower Tolt 3,47.63802,-121.915,Tolt River Corridor Study,Stream Gauge(Recording),76.89,
+Tolt4,1194,Lower Tolt 4,47.63826,-121.915,Tolt River Corridor Study,Stream Gauge(Recording),77.4,moved from 47.63807 -121.91467
+Tolt5,1195,Lower Tolt 5,47.63951,-121.909,Tolt River Corridor Study,Stream Gauge(Recording),87.24,suvey
+Tolt6,1196,Lower Tolt 6,47.64035,-121.907,Tolt River Corridor Study,Stream Gauge(Recording),88.41,survey
+Tolt7,1197,Lower Tolt 7,47.64206,-121.902,Tolt River Corridor Study,Stream Gauge(Recording),97.76,survey
+Tolt8,1198,Lower Tolt 8,47.64297,-121.895,Tolt River Corridor Study,Stream Gauge(Recording),108.03,survey
+Trilogy_met,798,Trilogy Golf Course Met Station,47.69998,-122.028,data from Trilogy GC met station,Precipitation Gauge(Recording),,
+VA20,721,"Robinwood Creek-17B, Vashon Island",47.4322,-122.51,,Stream Gauge(Recording),,
+VA23,707,"Christensen Creek, Vashon Island",47.4032,-122.519,,Stream Gauge(Recording),,
+VA30,708,"Bates Creek, Vashon Island",47.375,-122.515,,Stream Gauge(Recording),,
+VA42c,1837,Judd abv Singer Rd,47.42477,-122.483,,Stream Gauge(Recording),167,imap
+VA42d,1838,Judd blw 111th,47.41703,-122.476,,Stream Gauge(Recording),120,imap
+VA43,710,"Tsugwalla Creek, Vashon Island",47.4048,-122.452,,Stream Gauge(Recording),,
+VA62,713,"Ellis Creek, Vashon Island",47.4171,-122.44,,Stream Gauge(Recording),,
+VA63,714,"Ellisport Creek, Vashon Island",47.4186,-122.44,,Stream Gauge(Recording),,
+VA64,715,"Beall Creek, Vashon Island",47.4489,-122.445,,Stream Gauge(Recording),,
+VA66,717,"Dilworth Creek, Vashon Island",47.4581,-122.449,,Stream Gauge(Recording),,
+VA67,718,"Glen Acre Creek, Vashon Island",47.4775,-122.449,,Stream Gauge(Recording),,
+VAS_w-60,1686,North Vashon Hwy,47.4757,-122.46,,Groundwater Observation Well(Recording),400,
+VAS_w-61,1578,"Valley Center Park-n-Ride 2"" well",47.42293,-122.461,,Groundwater Observation Well(Recording),325,
+VAS_w-63,1691,Redding Beach Rd well,47.39461,-122.505,,Groundwater Observation Well(Recording),290,
+VAS_w-64,1755,Wax Orchard Rd @ Vashon Hwy,47.35924,-122.504,,Groundwater Observation Well(Recording),380,
+VAS_w-65,1756,Valley Center Park-n-Ride 6-inch well,47.423,-122.461,,Groundwater Observation Well(Recording),325,
+VAS_w-70,1688,"Valley Center P-n-R 2"" Deep well",47.42293,-122.462,,Groundwater Observation Well(Recording),325,
+VAS_w-71,1576,Island Center Forest,47.43724,-122.471,,Groundwater Observation Well(Recording),367,
+VAS_w-72,1577,Paradise Ridge Park,47.40811,-122.485,,Groundwater Observation Well(Recording),380,
+VAS_w-73,1687,111th Ave Well,47.41937,-122.477,,Groundwater Observation Well(Recording),145,
+VMI_OBW2,1780,MI OBW-2,47.36702,-122.445,,Groundwater Observation Well(Recording),351.7,
+VMI_OBW5,1765,MI OBW-5,47.37054,-122.444,,Groundwater Observation Well(Recording),264.7,
+WAM06600-013031,1300,Bear Creek Friendly Village,47.68307,-122.091,Still deployed,,,
+WAM06600-299887,1347,Glendale Cr,47.94022,-122.365,"Still deployed,",,,
+WL1509E,1908,East Lake Sammamish Wetland 09 East to Allen Lake,47.6132,-122.017,For City of Sammamish,Stream Gauge(Recording),5,
+WL1509W,1907,East Lake Sammamish Wetland 09 West,47.61182,-122.034,For City of Sammamish,Stream Gauge(Recording),,
+WL1517,1915,East Lake Sammamish Wetland 17 - City Site 4,47.59517,-122.058,City of Sammamish site 4,Stream Gauge(Recording),0,
+WL1561,1909,East Lake Sammamish Wetland 61 - City Site 3,47.60133,-122.042,City of Sammamish site 3,Stream Gauge(Recording),,
+WL3106,1569,"Cedar River Wetland 06, Cavenaugh Pond, River Bend Project",47.46431,-122.114,Installed for River Bend project,Stream Gauge(Recording),121.03,Pipe top (123.49 - top of board)
+WL31116b_E,1940,Cedar Weltand 116b - Rutledge - Johnson upper pond,47.4237,-122.048,,Stream Gauge(Recording),254.7,
+WL31116b_W,1939,Cedar Weltand 116b - Rutledge - Johnson lower pond,47.42414,-122.049,,Stream Gauge(Recording),262.14,
+WL3708 Lake Boren,1860,"Lk Boren - May Creek wetland 08, City of Newcastle",47.53214,-122.164,Gauge operated for City of Newcastle,Stream Gauge(Recording),,
+WL5317,1234,Snoqualmie Wetland 5317 - Deer Cr Main Beaver Pond,47.70415,-121.971,Call homeowner before visit - Beth and Cliff Nelson (425-788-2500),Stream Gauge(Recording),245,from iMap 5' contours
+WL5317a,1278,Snoqualmie Wetland 5317 - Deer Cr Beaver Pond - Upper site,47.70396,-121.97,aboveupper dam in wetland. Call 425-788-2500 before visit. Cliff Nelson,Stream Gauge(Recording),250,from imap 5 foot contours
+WL5317b,1689,Deer Cr Beaver Pond below main dam,47.70414,-121.971,water level below main dam. Call 425-788-2500 before visit. Cliff Nelson,Stream Gauge(Recording),245,
+WL5322,1438,Snoqualmie Wetland 22 - Winkleman,47.71624,-121.99,Winkleman project,Stream Gauge(Recording),38.71,
+WL5387_OL,1513,Snoqualmie Wetland 87 near outlet,47.57694,-121.903,Near SAFC_04,Stream Gauge(Recording),81.3,Bob P survey
+WL5387_b,1471,Snoqualmie Wetland 87 at Barfuse Levee Culvert,47.5718,-121.895,,Stream Gauge(Recording),90.26,MW WL5387_b TOP OF PVC
+WL5705,1231,Tate Creek Wetland 5 (TC5) - McLeod Lake - Upper Pool,47.55698,-121.732,"level only, at inlet to leveler pipe.",Stream Gauge(Recording),1015,from imap 5' contours
+WL5705_a,1271,Tate Creek Wetland 5 (TC5) - McLeod Lake - Lower Pool,47.5567,-121.732,"level only, pool near start of creek ravine.",Precipitation Gauge(Recording),,
+WLDLK,1869,Lake Wilderness,47.37137,-122.036,,Temperature and Lake Level (Recording),460,
+WnkDwnA,1950,"Winkleman at placed pile, A row",47.71471,-121.994,,Stream Gauge(Recording),30.3,equated with WnkDwn
+XRDS,669,Bellevue Crossroads I&I Rain Gage,47.61734,-122.126,At Bellevue Fire Station #3,Precipitation Gauge(Recording),,
+YBAY,1030,Yarrow Bay,47.64918,-122.204,Site Code changed Jan 16 2013 per WTD,WTD Rain Gage,,
+Z_ERES_hold,1475,Store ERES loggers we start,,,,Stream Gauge(Recording),,
+bl1,218,Beaver Lake 1,47.59737,-121.989,,Stream Gauge(Recording),,
+bl2,219,Beaver Lake 2,47.59396,-121.998,,Stream Gauge(Recording),,
+bl4,220,Beaver Lake Outlet at weir,47.58556,-122.006,,Stream Gauge(Recording),,
+hslak,241,"Horseshoe Lake NE shore, wetland 4021",47.31007,-122.04,various lake level gagings and observations adjusted to NAVD88,Stream Gauge(Recording),512.41,Survey rebar & cap in back yard of 32626 224 PL SE
+lfu,248,Licorice Fern Rain Gauge,47.5064,-122.112,,Precipitation Gauge(Recording),,
+sgdwn,2067,Seawest Granston lower stream,47.72713,-122.071,,Stream Gauge(Recording),143,
+va12c,1853,Shinglemill abv Needle,47.46779,-122.474,,Stream Gauge(Recording),113,imap
+va12d,1854,Needle Creek,47.46785,-122.474,,Stream Gauge(Recording),115,imap
+va42e,1839,Judd blw 107th,47.41006,-122.471,,Stream Gauge(Recording),70,imap
+wnkDwn,1266,Snoq. River at RM 12.9 below Winkelman Revetment Reconstruction Project,47.71374,-121.994,Barton Project,Stream Gauge(Recording),37.04,
+wnkPndOL,1878,Winkleman Pond Outlet 3,47.71589,-121.99,,Stream Gauge(Recording),37,
+zLOST,1105,lost or discarded loggers,47.59901,-122.331,location to track lost instruments,Stream Gauge(Recording),,
+z_U20_battery replaced,1474,put U20 loggers that battery was replaced,,,,,,
+z_U20_low_battery,1941,U20 to be sent in to Onset,,,,,,
+z_U22_dead_battery_loggers,1255,put U22 loggers with dead internal battery,,,,Stream Gauge(Recording),,
+z_U22_replaced,1481,U22 loggers replaced by Onset,,,these serial numbers sent to Onset,,,
+z_loaned,1239,loaned out loggers,,,,,,
+zz_Curtis_D,1690,Loaned loggers,,,,Stream Gauge(Recording),,
+zz_SWS_Onset,1733,Stormwater Services loggers,,,"hold SWS loggers, used for Xtie studies, & borrowed",Stream Gauge(Recording),,
+zz_gager_AJM,1672,AJM / EPU 057 Stuff,,,,Stream Gauge(Recording),,
+zz_gager_BJG,1572,BJG / EWV284 stuff,,,,Crest/Staff Gauge,,
+zz_gager_DEF,1571,Funke / EPU106 stuff,,,,Crest/Staff Gauge,,
+zz_gager_DTS,1671,DTS / EOP 143 stuff,,,,Stream Gauge(Recording),,
+zz_gager_IAH,1770,Ian_Stuff,,,,Crest/Staff Gauge,,
+zzz_Onset_Where,1720,Onset Loggers unkown location,,,,Stream Gauge(Recording),,
+zzz_discard,1436,discarded instruments,,,,,,
