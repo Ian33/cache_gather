@@ -27,15 +27,21 @@ def create_dash_layout(app):
     
     # Body 
     # body = html.Div([dcc.Markdown(""" ## I'm ready to serve static files on Heroku. Just look at this! """), html.Br(), html.Img(src='charlie.png')])
-    
+    google_docs_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vThP_YzVbw-6o8z5vROOLQLQ4BOHbe6g1__yUyGwPjo6QPYQRa1ckb9RukUd1iYhuGwV488I6DzSFsk/pub?gid=904730794&single=true&output=csv"
+    pd.read_csv()
+    site_list=pd.read_csv(google_docs_url)
+    site_list = site_list['SITE_CODE']
+    #options = [{'label': t, 'value': t} for t in test]
+    '''
     all_options = {
         'America': ['New York City', 'San Francisco', 'Cincinnati'],
         'Canada': [u'Montréal', 'Toronto', 'Ottawa']
     }
-
+    '''
     
     body = html.Div([
-        dcc.Dropdown(options=[{'label': k, 'value': k} for k in all_options.keys()],
+        #dcc.Dropdown(options=[{'label': k, 'value': k} for k in all_options.keys()],
+        dcc.Dropdown(options=[{'label': k, 'value': k} for k in site_list],
         value='NYC',
         id='demo-dropdown'),
         html.Div(id='dd-output-container')
