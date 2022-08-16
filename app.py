@@ -62,7 +62,7 @@ def create_dash_layout(app):
 
         
     # Footer
-    footer = html.Div([html.Br(), html.Br(), dcc.Markdown("""test"""+str(site_list))])
+    footer = html.Div([html.Br(), html.Br(), dcc.Markdown("""test""")])
     
     # Assemble dash layout 
     app.layout = html.Div([header, body, footer])
