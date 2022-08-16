@@ -1,5 +1,6 @@
 from dash import Dash, callback, html, dcc, html, Input, Output
-
+from sqlalchemy import create_engine
+import sqlalchemy
 import dash_bootstrap_components as dbc
 import numpy as np
 import pandas as pd
@@ -27,21 +28,33 @@ def create_dash_layout(app):
     
     # Body 
     # body = html.Div([dcc.Markdown(""" ## I'm ready to serve static files on Heroku. Just look at this! """), html.Br(), html.Img(src='charlie.png')])
-    google_docs_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vThP_YzVbw-6o8z5vROOLQLQ4BOHbe6g1__yUyGwPjo6QPYQRa1ckb9RukUd1iYhuGwV488I6DzSFsk/pub?gid=904730794&single=true&output=csv"
-    pd.read_csv()
-    site_list=pd.read_csv(google_docs_url)
-    site_list = site_list['SITE_CODE']
-    #options = [{'label': t, 'value': t} for t in test]
-    '''
+    
+    
     all_options = {
         'America': ['New York City', 'San Francisco', 'Cincinnati'],
         'Canada': [u'Montréal', 'Toronto', 'Ottawa']
     }
-    '''
+    
+    username = "fefwnlolmwdfap"
+    password = "1ecfbf257fe1dfab544971996e815feab76ea41b7833def47fdbbeaa32b61a26"
+    host_name = "ec2-18-204-142-254.compute-1.amazonaws.com"
+    db_name = "dejak6ljiumpji"
+    engine = create_engine(f"postgresql://{username}:{password}@{host_name}/{db_name}")
+ 
+    #sites.to_sql('sites', engine)
+    #sites.to_sql('sites', engine, if_exists='replace')
+
+    #sites.to_sql("sites", con = engine, if_exists='append')
+
+    sql = "select * from sites"
+    df = pd.read_sql(sql,con=engine)
+ 
+    site_list = df["site_number"].to_list()
+
     
     body = html.Div([
         #dcc.Dropdown(options=[{'label': k, 'value': k} for k in all_options.keys()],
-        dcc.Dropdown(options=[{'label': k, 'value': k} for k in site_list],
+        dcc.Dropdown(options=[{'label': k, 'value': k} for k in all_options],
         value='NYC',
         id='demo-dropdown'),
         html.Div(id='dd-output-container')
@@ -49,7 +62,7 @@ def create_dash_layout(app):
 
         
     # Footer
-    footer = html.Div([html.Br(), html.Br(), dcc.Markdown(""" ### Built with ![Image](heart.png) in Python using [Dash](https://plotly.com/dash/)""")])
+    footer = html.Div([html.Br(), html.Br(), dcc.Markdown("""test"""+str(site_list))])
     
     # Assemble dash layout 
     app.layout = html.Div([header, body, footer])
