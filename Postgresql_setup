@@ -1,0 +1,22 @@
+from sqlalchemy import create_engine
+import sqlalchemy
+
+import pandas as pd
+username = "fefwnlolmwdfap"
+password = "1ecfbf257fe1dfab544971996e815feab76ea41b7833def47fdbbeaa32b61a26"
+host_name = "ec2-18-204-142-254.compute-1.amazonaws.com"
+db_name = "dejak6ljiumpji"
+engine = create_engine(f"postgresql://{username}:{password}@{host_name}/{db_name}")
+print("engine")
+sites = pd.read_csv(r"C:\Users\ianrh\Documents\cache_gather\static\site_list.csv")
+sites = sites.set_index('site_sql_id')
+#sites.to_sql('sites', engine)
+#sites.to_sql('sites', engine, if_exists='replace')
+
+#sites.to_sql("sites", con = engine, if_exists='append')
+print("created")
+sql = "select * from sites"
+df = pd.read_sql(sql,con=engine)
+print(df)
+site_list = df["site_number"].to_list()
+print(site_list)
