@@ -21,7 +21,9 @@ DATABASE_URL = os.environ['DATABASE_URL']
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 cur = conn.cursor()
 cur.execute("select * from sites")
-df = pd.DataFrame(cur.fetchall())
+#df = pd.DataFrame(cur.fetchall())
+df = pd.DataFrame(cur.fetchall(),columns=['site_number'])
+df = df["site_number"].to_list()
 #engine = create_engine(DATABASE_URL)
 # Define Dash layout
 def create_dash_layout(app):
