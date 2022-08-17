@@ -1,5 +1,6 @@
 from sqlalchemy import create_engine
 import sqlalchemy
+import psycopg2
 
 import pandas as pd
 username = "cwtcmzqujpmszj"
@@ -11,8 +12,13 @@ print("engine")
 sites = pd.read_csv(r"C:\Users\ianrh\Documents\cache_gather\static\site_list.csv")
 sites = sites.set_index('site_sql_id')
 #sites.to_sql('sites', engine)
-sites.to_sql('sites', engine, if_exists='replace')
-
+#sites.to_sql('sites', engine, if_exists='replace')
+conn = psycopg2.connect(f"postgresql://{username}:{password}@{host_name}/{db_name}")
+cur = conn.cursor()
+cur.execute("select * from sites")
+df = pd.DataFrame(cur.fetchall())
+print("df   ")
+print(df)
 #sites.to_sql("sites", con = engine, if_exists='append')
 print("created")
 sql = "select * from sites"

@@ -19,6 +19,9 @@ server = app.server
 server.wsgi_app = WhiteNoise(server.wsgi_app, root='static/') 
 DATABASE_URL = os.environ['DATABASE_URL']
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+cur = conn.cursor()
+cur.execute("select * from sites")
+df = pd.DataFrame(cur.fetchall())
 #engine = create_engine(DATABASE_URL)
 # Define Dash layout
 def create_dash_layout(app):
