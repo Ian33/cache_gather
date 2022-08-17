@@ -20,7 +20,7 @@ server.wsgi_app = WhiteNoise(server.wsgi_app, root='static/')
 DATABASE_URL = os.environ['DATABASE_URL']
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 cur = conn.cursor()
-cur.execute("select * from sites")
+cur.execute("select site_number from sites")
 #df = pd.DataFrame(cur.fetchall())
 df = pd.DataFrame(cur.fetchall(),columns=['site_number'])
 df = df["site_number"].to_list()
