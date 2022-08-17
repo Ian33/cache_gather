@@ -6,7 +6,9 @@ import pandas as pd
 import matplotlib as mpl
 import gunicorn                     #whilst your local machine's webserver doesn't need this, Heroku's linux webserver (i.e. dyno) does. I.e. This is your HTTP server
 from whitenoise import WhiteNoise   #for serving static files on Heroku
-
+import os 
+from sqlalchemy import create_engine
+import sqlalchemy
 # Instantiate dash app
 app = Dash(__name__, external_stylesheets=[dbc.themes.FLATLY])
 
@@ -28,6 +30,8 @@ def create_dash_layout(app):
     # Body 
     # body = html.Div([dcc.Markdown(""" ## I'm ready to serve static files on Heroku. Just look at this! """), html.Br(), html.Img(src='charlie.png')])
     
+    DATABASE_URL = os.environ['DATABASE_URL']
+    engine = create_engine(DATABASE_URL)
     all_options = {
         'America': ['New York City', 'San Francisco', 'Cincinnati'],
         'Canada': [u'Montréal', 'Toronto', 'Ottawa']
