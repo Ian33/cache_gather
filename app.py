@@ -8,7 +8,7 @@ import gunicorn                     #whilst your local machine's webserver doesn
 from whitenoise import WhiteNoise   #for serving static files on Heroku
 import os 
 from sqlalchemy import create_engine
-import sqlalchemy
+import psycopg2
 # Instantiate dash app
 app = Dash(__name__, external_stylesheets=[dbc.themes.FLATLY])
 
@@ -17,7 +17,9 @@ server = app.server
 
 # Enable Whitenoise for serving static files from Heroku (the /static folder is seen as root by Heroku) 
 server.wsgi_app = WhiteNoise(server.wsgi_app, root='static/') 
-
+DATABASE_URL = os.environ['DATABASE_URL']
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+#engine = create_engine(DATABASE_URL)
 # Define Dash layout
 def create_dash_layout(app):
 
@@ -30,8 +32,7 @@ def create_dash_layout(app):
     # Body 
     # body = html.Div([dcc.Markdown(""" ## I'm ready to serve static files on Heroku. Just look at this! """), html.Br(), html.Img(src='charlie.png')])
     
-    DATABASE_URL = os.environ['DATABASE_URL']
-    engine = create_engine(DATABASE_URL)
+    
     all_options = {
         'America': ['New York City', 'San Francisco', 'Cincinnati'],
         'Canada': [u'Montréal', 'Toronto', 'Ottawa']
