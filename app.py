@@ -50,18 +50,22 @@ def create_dash_layout(app):
             value='NYC',
             id='demo-dropdown'),
         html.Div(id='dd-output-container'),
-        html.Div(dcc.RadioItems([
-            {'label': 'New York City', 'value': 'NYC'},
-            {'label': 'Montréal', 'value': 'MTL'},
-            {'label': 'San Francisco', 'value': 'SF', 'disabled': True}],
-            'MTL')),
-        ]),
+        ])
+
+    radio_buton = html.Div([
+        dcc.RadioItems([
+        {'label': 'New York City', 'value': 'NYC'},
+        {'label': 'Montréal', 'value': 'MTL'},
+        {'label': 'San Francisco', 'value': 'SF', 'disabled': True}],
+        'MTL')
+        ])
+
         
     # Footer
     footer = html.Div([html.Br(), html.Br(), dcc.Markdown(""" ### Built with ![Image](heart.png) in Python using [Dash](https://plotly.com/dash/)""")])
     
     # Assemble dash layout 
-    app.layout = html.Div([header, body, footer])
+    app.layout = html.Div([header, body, radio_buton, footer])
 
     return app
 
