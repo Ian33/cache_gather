@@ -19,14 +19,20 @@ cur = conn.cursor()
 cur.execute("select datum_comment from sites where site_number = '25J'")
 df = pd.DataFrame(cur.fetchall(),columns=['site_number'])
 #if df.site_number != "None":
-
-#df = df["site_number"].to_list()
-print("query df")
+cur.execute(f"select datum from sites where site_number = '31c'")
+            #df = pd.DataFrame(cur.fetchall())
+df = pd.DataFrame(cur.fetchall(),columns=['datum'])
+        #df = df["site_number"].to_list()
 print(df.iloc[0,0])
-print("add info")
-df.iloc[0,0] = "No information given"
-print(df.iloc[0,0] )
-print(df)
+if df.iloc[0,0] == "None":
+    df.iloc[0,0] = "site exists; no information given"
+    print("chn")
+    print(df)
+    print([{'label': i, 'value': i} for i in df])
+else:
+    print(df)
+    print([{'label': i, 'value': i} for i in df])
+        #return df
 
 #sites.to_sql("sites", con = engine, if_exists='append')
 #print("created")

@@ -54,7 +54,7 @@ def create_dash_layout(app):
 
     radio_buton = html.Div([
         dcc.RadioItems(
-        value='MTL', id="reference_informationn_radio_button")
+        value='', id="reference_informationn_radio_button")
         ])
 
         
@@ -93,14 +93,15 @@ def reference_informationn_get_options(value):
         conn = psycopg2.connect(DATABASE_URL, sslmode='require')
         cur = conn.cursor()
         cur.execute(f"select datum from sites where site_number = '{value}'")
-            #df = pd.DataFrame(cur.fetchall())
         df = pd.DataFrame(cur.fetchall(),columns=['datum'])
-        #df = df["site_number"].to_list()
-        if df.iloc[0,0] == "None":
-            df.iloc[0,0] = "site exists; no information given"
-            return [{'label': i, 'value': i} for i in df]
+            #df = pd.DataFrame(cur.fetchall())
+        
+        df = df["site_number"].to_list()
+        if df[0] == "None":
+            df[0] = "site exists; no information given"
+            return df
         else:
-            return [{'label': i, 'value': i} for i in df]
+            return df
         #return df
     
 #
