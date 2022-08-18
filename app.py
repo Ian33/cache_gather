@@ -95,9 +95,9 @@ def reference_informationn_get_options(value):
         cur.execute(f"select datum from sites where site_number = '{value}'")
             #df = pd.DataFrame(cur.fetchall())
         df = pd.DataFrame(cur.fetchall(),columns=['datum'])
-        df = df["site_number"].to_list()
-        if df[0] == "None":
-            df[0] = "site exists; no information given"
+        #df = df["site_number"].to_list()
+        if df.iloc[0,0] == "None":
+            df.iloc[0,0] = "site exists; no information given"
             return [{'label': i, 'value': i} for i in df]
         else:
             return [{'label': i, 'value': i} for i in df]

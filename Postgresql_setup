@@ -1,5 +1,6 @@
 #from sqlalchemy import create_engine
 #import sqlalchemy
+from queue import Empty
 import psycopg2
 
 import pandas as pd
@@ -15,11 +16,18 @@ sites = sites.set_index('site_sql_id')
 #sites.to_sql('sites', engine, if_exists='replace')
 conn = psycopg2.connect(f"postgresql://{username}:{password}@{host_name}/{db_name}")
 cur = conn.cursor()
-cur.execute("select datum from sites where site_number = '02L'")
+cur.execute("select datum_comment from sites where site_number = '25J'")
 df = pd.DataFrame(cur.fetchall(),columns=['site_number'])
-df = df["site_number"].to_list()
-print("df  list  ")
+#if df.site_number != "None":
+
+#df = df["site_number"].to_list()
+print("query df")
+print(df.iloc[0,0])
+print("add info")
+df.iloc[0,0] = "No information given"
+print(df.iloc[0,0] )
 print(df)
+
 #sites.to_sql("sites", con = engine, if_exists='append')
 #print("created")
 #sql = "select * from sites"
