@@ -45,16 +45,18 @@ def create_dash_layout(app):
     # body = html.Div([dcc.Markdown(""" ## I'm ready to serve static files on Heroku. Just look at this! """), html.Br(), html.Img(src='charlie.png')])
 
     body = html.Div([
-        #dcc.Dropdown(options=[{'label': k, 'value': k} for k in all_options.keys()],
-        dcc.Dropdown(options=df,
-            value='NYC',
-            id='demo-dropdown'),
-        html.Div(id='dd-output-container'),
-        dcc.RadioItems([
-            {'label': 'New York City', 'value': 'NYC'},
-            {'label': 'Montréal', 'value': 'MTL'},
-            {'label': 'San Francisco', 'value': 'SF', 'disabled': True}],
-            'MTL')
+            #dcc.Dropdown(options=[{'label': k, 'value': k} for k in all_options.keys()],
+            dcc.Dropdown(options=df,
+                value='NYC',
+                id='demo-dropdown'),
+            html.Div(id='dd-output-container'),
+            html.Div([
+                dcc.RadioItems([
+                    {'label': 'New York City', 'value': 'NYC'},
+                    {'label': 'Montréal', 'value': 'MTL'},
+                    {'label': 'San Francisco', 'value': 'SF', 'disabled': True}],
+                    'MTL')
+                ]),
         ]),
         
     # Footer
