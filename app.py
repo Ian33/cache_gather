@@ -17,6 +17,7 @@ server = app.server
 
 # Enable Whitenoise for serving static files from Heroku (the /static folder is seen as root by Heroku) 
 server.wsgi_app = WhiteNoise(server.wsgi_app, root='static/') 
+'''
 DATABASE_URL = os.environ['DATABASE_URL']
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 cur = conn.cursor()
@@ -24,6 +25,12 @@ cur.execute("select site_number from sites")
 #df = pd.DataFrame(cur.fetchall())
 df = pd.DataFrame(cur.fetchall(),columns=['site_number'])
 df = df["site_number"].to_list()
+
+'''
+from get_site_list import query_site_list
+
+df = query_site_list()
+
 #engine = create_engine(DATABASE_URL)
 # Define Dash layout
 def create_dash_layout(app):
