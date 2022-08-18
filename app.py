@@ -47,8 +47,8 @@ def create_dash_layout(app):
     body = html.Div([
         #dcc.Dropdown(options=[{'label': k, 'value': k} for k in all_options.keys()],
         dcc.Dropdown(options=df,
-        value='NYC',
-        id='demo-dropdown'),
+            value='NYC',
+            id='demo-dropdown'),
         html.Div(id='dd-output-container'),
         dcc.RadioItems([
             {'label': 'New York City', 'value': 'NYC'},
