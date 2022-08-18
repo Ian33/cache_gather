@@ -54,7 +54,8 @@ def create_dash_layout(app):
 
     radio_buton = html.Div([
         dcc.RadioItems(
-        value='MTL', id="reference_informationn_radio_button")
+            value='MTL', id="reference_informationn_radio_button"),
+        html.Div(id='refernce_elevation'),
         ])
 
         
@@ -77,15 +78,17 @@ def update_output(value):
     return f'You have selected {value}'
 
 # get reference information
-from reference_information import get_reference_information
+from reference_information import get_reference_information, get_reference_elevation
 @app.callback(
     Output('reference_informationn_radio_button', "options"),
+    Output('refernce_elevation', 'children'),
     Input('demo-dropdown', 'value'))
 
 
 def reference_informationn_get_options(value):
-    data = get_reference_information(value)
-    return data   
+    reference_information = get_reference_information(value)
+    reference_elevation = get_reference_elevation(value)
+    return reference_information, reference_elevation
     
     
 #
