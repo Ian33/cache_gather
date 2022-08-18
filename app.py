@@ -54,7 +54,7 @@ def create_dash_layout(app):
 
     radio_buton = html.Div([
         dcc.RadioItems(
-        'MTL', id="reference_informationn_radio_button")
+        value='MTL', id="reference_informationn_radio_button")
         ])
 
         
