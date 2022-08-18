@@ -77,15 +77,26 @@ def update_output(value):
     return f'You have selected {value}'
 
 # get reference information
-from reference_information import get_reference_information
+#from reference_information import get_reference_information
 @app.callback(
     Output('reference_informationn_radio_button', "options"),
     Input('demo-dropdown', 'value'))
 
 
 def reference_informationn_get_options(value):
-    data = get_reference_information(value)
-    return data
+    
+        
+    if value == "":
+        return {""}
+    else:
+        DATABASE_URL = os.environ['DATABASE_URL']
+        conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+        cur = conn.cursor()
+        cur.execute(f"select datum from sites")
+            #df = pd.DataFrame(cur.fetchall())
+        df = pd.DataFrame(cur.fetchall(),columns=['datum'])
+        df = df["datum"].to_list()
+        return df
     
 #
 
