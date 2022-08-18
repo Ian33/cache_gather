@@ -92,7 +92,7 @@ def reference_informationn_get_options(value):
         DATABASE_URL = os.environ['DATABASE_URL']
         conn = psycopg2.connect(DATABASE_URL, sslmode='require')
         cur = conn.cursor()
-        cur.execute(f"select datum from sites where {value}")
+        cur.execute(f"select datum from sites where site_number = '{value}'")
             #df = pd.DataFrame(cur.fetchall())
         df = pd.DataFrame(cur.fetchall(),columns=['datum'])
         df = df["datum"].to_list()
