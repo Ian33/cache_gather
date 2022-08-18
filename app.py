@@ -86,7 +86,8 @@ from reference_information import get_reference_information, get_reference_eleva
 
 def reference_informationn_get_options(value):
     reference_information = get_reference_information(value)
-    return reference_information, reference_elevation
+    return reference_information
+
 @app.callback(
     Output('refernce_elevation', 'children'),
     Input('demo-dropdown', 'value'))
