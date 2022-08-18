@@ -54,7 +54,7 @@ def create_dash_layout(app):
 
     radio_buton = html.Div([
         dcc.RadioItems(
-        value='', id="reference_informationn_radio_button")
+        value='MTL', id="reference_informationn_radio_button")
         ])
 
         
@@ -95,13 +95,7 @@ def reference_informationn_get_options(value):
         cur.execute(f"select datum from sites where site_number = '{value}'")
         df = pd.DataFrame(cur.fetchall(),columns=['datum'])
             #df = pd.DataFrame(cur.fetchall())
-        
-        df = df["site_number"].to_list()
-        if df[0] == "None":
-            df[0] = "site exists; no information given"
-            return df
-        else:
-            return df
+        return [{'label': i, 'value': i} for i in df]
         #return df
     
 #
