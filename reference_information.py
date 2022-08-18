@@ -4,18 +4,14 @@ import psycopg2
 import pandas as pd
 
 def get_reference_information(value):
-    def query(value):
-    
+    if value == "":
+        return [{'label': "", 'value': ""}]
+    else:
         DATABASE_URL = os.environ['DATABASE_URL']
         conn = psycopg2.connect(DATABASE_URL, sslmode='require')
         cur = conn.cursor()
-        cur.execute(f"select datum from sites")
-        #df = pd.DataFrame(cur.fetchall())
-        df = pd.DataFrame(cur.fetchall(),columns=['datum'])
-        df = df["datum"].to_list()
-        
-    if value == "":
-        return {""}
-    else:
-        data = query(value)
-        return data
+        cur.execute(f"select reverence_information from sites where site_number = '{value}'")
+        df = pd.DataFrame(cur.fetchall(),columns=['reverence_information'])
+        df = df["reverence_information"].tolist()
+        return [{'label': i, 'value': i} for i in df]
+        #return df
