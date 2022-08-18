@@ -94,7 +94,7 @@ def reference_informationn_get_options(value):
         cur = conn.cursor()
         cur.execute(f"select datum from sites where site_number = '{value}'")
         df = pd.DataFrame(cur.fetchall(),columns=['datum'])
-            #df = pd.DataFrame(cur.fetchall())
+        df = df.columns.values.tolist()
         return [{'label': i, 'value': i} for i in df]
         #return df
     
