@@ -47,7 +47,7 @@ def create_dash_layout(app):
     body = html.Div([
         #dcc.Dropdown(options=[{'label': k, 'value': k} for k in all_options.keys()],
         dcc.Dropdown(options=df,
-            value='NYC',
+            value='',
             id='demo-dropdown'),
         html.Div(id='dd-output-container'),
         ])
@@ -77,11 +77,16 @@ def update_output(value):
     return f'You have selected {value}'
 
 # get reference information
+from reference_information import get_reference_information
 @app.callback(
     Output('reference_informationn_radio_button', "options"),
     Input('demo-dropdown', 'value'))
+
+
 def reference_informationn_get_options(value):
-    return {'label': 'New York City', 'value': 'NYC'}
+    data = get_reference_information(value)
+    return data
+    
 
 
 
