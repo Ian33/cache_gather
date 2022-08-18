@@ -80,11 +80,9 @@ def update_output(value):
 @app.callback(
     Output('reference_informationn_radio_button', "options"),
     Input('demo-dropdown', 'value'))
-def reference_informationn_get_options():
-    return {[
-        {'label': 'New York City', 'value': 'NYC'},
-        {'label': 'Montréal', 'value': 'MTL'},
-        {'label': 'San Francisco', 'value': 'SF', 'disabled': True}]}
+def reference_informationn_get_options(value):
+    return {'label': 'New York City', 'value': 'NYC'}
+
 
 
 # Run flask app
