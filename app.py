@@ -87,7 +87,7 @@ def reference_informationn_get_options(value):
     
         
     if value == "":
-        return {""}
+        return [{'label': "", 'value': ""}]
     else:
         DATABASE_URL = os.environ['DATABASE_URL']
         conn = psycopg2.connect(DATABASE_URL, sslmode='require')
@@ -96,7 +96,9 @@ def reference_informationn_get_options(value):
             #df = pd.DataFrame(cur.fetchall())
         df = pd.DataFrame(cur.fetchall(),columns=['datum'])
         df = df["datum"].to_list()
-        return df
+        #df = Parameters.columns.values.tolist()
+        return [{'label': i, 'value': i} for i in df]
+        #return df
     
 #
 
