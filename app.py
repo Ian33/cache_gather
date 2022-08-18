@@ -78,7 +78,7 @@ def update_output(value):
 
 # get reference information
 @app.callback(
-    Output('id="reference_informationn_radio_button', "options"),
+    Output('reference_informationn_radio_button', "options"),
     Input('demo-dropdown', 'value'))
 def reference_informationn_get_options():
     return [
