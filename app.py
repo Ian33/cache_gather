@@ -52,18 +52,18 @@ def create_dash_layout(app):
         html.Div(id='dd-output-container'),
         ])
 
-    radio_buton = html.Div([
+    reference_dropdown = html.Div([
         dcc.RadioItems(
             value='MTL', id="reference_informationn_radio_button"),
-        html.Div(id='refernce_elevation'),
         ])
+    show_reference_elevation = html.Div([html.Div(id='refernce_elevation')])
 
         
     # Footer
     footer = html.Div([html.Br(), html.Br(), dcc.Markdown(""" ### Built with ![Image](heart.png) in Python using [Dash](https://plotly.com/dash/)""")])
     
     # Assemble dash layout 
-    app.layout = html.Div([header, body, radio_buton, footer])
+    app.layout = html.Div([header, body, reference_dropdown, show_reference_elevation, footer])
 
     return app
 
