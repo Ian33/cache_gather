@@ -53,11 +53,8 @@ def create_dash_layout(app):
         ])
 
     radio_buton = html.Div([
-        dcc.RadioItems([
-        {'label': 'New York City', 'value': 'NYC'},
-        {'label': 'Montréal', 'value': 'MTL'},
-        {'label': 'San Francisco', 'value': 'SF', 'disabled': True}],
-        'MTL')
+        dcc.RadioItems(
+        'MTL', id="reference_informationn_radio_button")
         ])
 
         
@@ -78,6 +75,17 @@ create_dash_layout(app)
 )
 def update_output(value):
     return f'You have selected {value}'
+
+# get reference information
+@app.callback(
+    Output('id="reference_informationn_radio_button', "options"),
+    Input('demo-dropdown', 'value'))
+def reference_informationn_get_options():
+    return [
+        {'label': 'New York City', 'value': 'NYC'},
+        {'label': 'Montréal', 'value': 'MTL'},
+        {'label': 'San Francisco', 'value': 'SF', 'disabled': True}]
+
 
 # Run flask app
 if __name__ == "__main__": app.run_server(debug=False, host='0.0.0.0', port=8050)
