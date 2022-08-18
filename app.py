@@ -81,10 +81,10 @@ def update_output(value):
     Output('reference_informationn_radio_button', "options"),
     Input('demo-dropdown', 'value'))
 def reference_informationn_get_options():
-    return [
+    return {[
         {'label': 'New York City', 'value': 'NYC'},
         {'label': 'Montréal', 'value': 'MTL'},
-        {'label': 'San Francisco', 'value': 'SF', 'disabled': True}]
+        {'label': 'San Francisco', 'value': 'SF', 'disabled': True}]}
 
 
 # Run flask app
