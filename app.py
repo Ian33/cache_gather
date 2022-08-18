@@ -81,14 +81,19 @@ def update_output(value):
 from reference_information import get_reference_information, get_reference_elevation
 @app.callback(
     Output('reference_informationn_radio_button', "options"),
-    Output('refernce_elevation', 'children'),
     Input('demo-dropdown', 'value'))
 
 
 def reference_informationn_get_options(value):
     reference_information = get_reference_information(value)
-    reference_elevation = get_reference_elevation(value)
     return reference_information, reference_elevation
+@app.callback(
+    Output('refernce_elevation', 'children'),
+    Input('demo-dropdown', 'value'))
+
+def reference_elevation(value):
+    reference_elevation = get_reference_elevation(value)
+    return reference_elevation    
     
     
 #
