@@ -26,5 +26,6 @@ def get_reference_elevation(value):
         cur.execute(f"select reverence_elevation from sites where site_number = '{value}'")
         df = pd.DataFrame(cur.fetchall(),columns=['reverence_elevation'])
         df = df["reverence_elevation"].tolist()
-        df = str(df[0]+str("sata"))
+        #df = str(df[0]+str("sata"))
+        df = "data"
         return df
