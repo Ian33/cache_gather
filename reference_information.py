@@ -18,7 +18,7 @@ def get_reference_information(value):
 
 def get_reference_elevation(value):
     if value == "":
-        return ""
+        return "blank"
     else:
         DATABASE_URL = os.environ['DATABASE_URL']
         conn = psycopg2.connect(DATABASE_URL, sslmode='require')
@@ -26,5 +26,5 @@ def get_reference_elevation(value):
         cur.execute(f"select reverence_elevation from sites where site_number = '{value}'")
         df = pd.DataFrame(cur.fetchall(),columns=['reverence_elevation'])
         df = df["reverence_elevation"].tolist()
-        df = df[0]
+        df = str(df[0]+str("sata"))
         return df
