@@ -10,17 +10,14 @@ import os
 from sqlalchemy import create_engine
 import psycopg2
 # Instantiate dash app
-#web
-app = Dash(__name__, external_stylesheets=[dbc.themes.FLATLY])
-# local
-# app = Dash(__name__)
+#app = Dash(__name__, external_stylesheets=[dbc.themes.FLATLY])
+app = Dash(__name__)
 
 # Reference the underlying flask app (Used by gunicorn webserver in Heroku production deployment)
-# web
-server = app.server 
+#server = app.server 
 
 # Enable Whitenoise for serving static files from Heroku (the /static folder is seen as root by Heroku) 
-server.wsgi_app = WhiteNoise(server.wsgi_app, root='static/') 
+#server.wsgi_app = WhiteNoise(server.wsgi_app, root='static/') 
 
 from get_site_list import query_site_list
 
@@ -73,7 +70,7 @@ def create_dash_layout(app):
     app.layout = html.Div([header, body, reference_input, text_box, footer])
 
     # enable for web app
-    return app
+    #return app
 
 # Construct the dash layout
 create_dash_layout(app)
@@ -110,8 +107,7 @@ def update_output(reference_elevation, reference_information, observation):
 
 
 # Run flask app
-# web 
-if __name__ == "__main__": app.run_server(debug=False, host='0.0.0.0', port=8050)
-# local
-if __name__ == '__main__': app.run_server(debug=True)
+#if __name__ == "__main__": app.run_server(debug=False, host='0.0.0.0', port=8050)
+if __name__ == '__main__':
+    app.run_server(debug=True)
 
