@@ -10,14 +10,16 @@ host_name = "ec2-44-206-197-71.compute-1.amazonaws.com"
 db_name = "d3fpg63d3qj0lt"
 engine = create_engine(f"postgresql://{username}:{password}@{host_name}/{db_name}")
 print("engine")
-sites = pd.read_csv(r"C:\Users\ianrh\Documents\cache_gather\static\site_list.csv")
-sites = sites.set_index('site_sql_id')
+
+#sites = pd.read_csv(r"C:\Users\ianrh\Documents\cache_gather\static\site_list.csv")
+#sites = sites.set_index('site_sql_id')
 #sites.to_sql('sites', engine)
-sites.to_sql('sites', engine, if_exists='replace')
-print("updated")
+#sites.to_sql('sites', engine, if_exists='replace')
+#print("updated")"""
+
 conn = psycopg2.connect(f"postgresql://{username}:{password}@{host_name}/{db_name}")
 cur = conn.cursor()
-cur.execute("select * from sites")
+cur.execute("select * from field_observations")
 df = pd.DataFrame(cur.fetchall())
 
 print(df)
