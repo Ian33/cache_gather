@@ -97,9 +97,8 @@ def create_dash_layout(app):
     ])
     
     button = html.Div([
-        html.Div(dcc.Input(id='input-on-submit', type='text')),
         html.Button('Submit', id='submit-val', n_clicks=0),
-        html.Div(id='container-button-basic',
+        html.Div(id='button_text',
              children='Enter a value and press submit')
     ])
 
@@ -158,7 +157,7 @@ def update_output(reference_elevation, reference_information, observation, date,
     return f"measure location: {reference_information} reference elevation: {reference_elevation} observation: {observation} level: {math} at {time}", time
 from upload import upload_field_observation
 @app.callback(
-    Output('container-button-basic', 'children'),
+    Output('button_text', 'children'),
     Input('submit-val', 'n_clicks'),
     Input('datetime', 'children'),
     Input("reference_elevation", 'value'),
