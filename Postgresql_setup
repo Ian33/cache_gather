@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine
+from  sqlalchemy import create_engine
 #import sqlalchemy
 from queue import Empty
 import psycopg2
@@ -8,30 +8,22 @@ username = "cwtcmzqujpmszj"
 password = "d9717d1ad9420277ea4b7a2332885a6e7cbc39073d29a0cfd9f733d2df6835b6"
 host_name = "ec2-44-206-197-71.compute-1.amazonaws.com"
 db_name = "d3fpg63d3qj0lt"
-engine = create_engine(f"postgresql://{username}:{password}@{host_name}/{db_name}")
-print("engine")
-sites = pd.read_csv(r"C:\Users\ianrh\Documents\cache_gather\static\site_list.csv")
-sites = sites.set_index('site_sql_id')
-#sites.to_sql('sites', engine)
-sites.to_sql('sites', engine, if_exists='replace')
-print("updated")
 conn = psycopg2.connect(f"postgresql://{username}:{password}@{host_name}/{db_name}")
+engine = create_engine(f"postgresql://{username}:{password}@{host_name}/{db_name}")
+
+df = {'site': ["test two"], 'datetime': ["03/20/2022 11:56"], 'observation': ["4"], 'notes': ["a test note"]}
+df = pd.DataFrame(data=df)
+#df = df.set_index('site')
+#df.to_sql('field_observations', engine, if_exists='append',index=False) #drops old table and creates new empty table
+
+#print("inserted")
+# Query the database and obtain data as Python objects
+conn = engine.raw_connection()
 cur = conn.cursor()
-cur.execute("select * from sites")
-df = pd.DataFrame(cur.fetchall())
+cur.execute("SELECT * FROM field_observations;")
+df2 = pd.DataFrame(cur.fetchall())
+print("data")
+print(df2)
 
-print(df)
-#if df.site_number != "None":
-#cur.execute(f"select datum from sites where site_number = '31c'")
-            #df = pd.DataFrame(cur.fetchall())
-#df = pd.DataFrame(cur.fetchall(),columns=['datum'])
-        #df = df["site_number"].to_list()
-#print(df.iloc[0,0])
-
-#sites.to_sql("sites", con = engine, if_exists='append')
-#print("created")
-#sql = "select * from sites"
-#df = pd.read_sql(sql,con=engine)
-#print(df)
-#site_list = df["site_number"].to_list()
-#print(site_list)
+cur.close()
+conn.close()

@@ -18,5 +18,5 @@ def query_site_list():
     #df = pd.DataFrame(cur.fetchall())
     df = pd.DataFrame(cur.fetchall(),columns=['site_number'])
     df = df["site_number"].to_list()
-    
+    conn.close()
     return(df)

@@ -1,4 +1,5 @@
 from dash import Dash, callback, html, dcc, html, Input, Output
+import dash
 #import dash_datetimepicker
 import dash_bootstrap_components as dbc
 import numpy as np
@@ -52,6 +53,7 @@ def create_dash_layout(app):
         html.Div(id='dd-output-container',
             style={'display': 'none'}), 
         ])
+
     datetime_input = html.Div([
         html.Div([
             html.Div(dcc.Input(id="date", type='text', placeholder="", value=datetime.datetime.now().strftime('%Y-%m-%d')), 
@@ -94,12 +96,18 @@ def create_dash_layout(app):
     html.Div(id='text_box_output', 
         style={'whiteSpace': 'pre-line'})
     ])
-        
+    
+    button = html.Div([
+        html.Button('Submit', id='submit-val', n_clicks=0),
+        html.Div(id='button_text',
+             children='Enter a value and press submit')
+    ])
+
     # Footer
     footer = html.Div([html.Br(), html.Br(), dcc.Markdown(""" ### Built with ![Image](heart.png) in Python using [Dash](https://plotly.com/dash/)""")])
     
     # Assemble dash layout 
-    app.layout = html.Div([header, body, datetime_input, reference_input, text_box, footer])
+    app.layout = html.Div([header, body, datetime_input, reference_input, text_box, button, footer])
 
     # enable for web app
     if deployment == "web":
@@ -148,8 +156,30 @@ def update_output(reference_elevation, reference_information, observation, date,
     except:
         time = ""
     return f"measure location: {reference_information} reference elevation: {reference_elevation} observation: {observation} level: {math} at {time}", time
+from upload import upload_field_observation
+@app.callback(
+    Output('button_text', 'children'),
+    Input('submit-val', 'n_clicks'),
+    Input('datetime', 'children'),
+    Input("reference_elevation", 'value'),
+    Input("reference_inforation", 'value'),
+    Input("observation", 'value'),
+    Input('demo-dropdown', 'value'),
+    Input('text_box', 'value'),
+)
+def update_output(n_clicks, datetime, reference_elevation, reference_information, observation, site, notes):
+    changed_id = [p['prop_id'] for p in dash.callback_context.triggered][0]
+    #today = pd.to_datetime("today")
+    if 'submit-val' in changed_id:
+        df = upload_field_observation(n_clicks, datetime, reference_elevation, reference_information, observation, site, notes)
+        return df
+    else:
+        return dash.no_update
     
-   
+    
+    
+    
+    
 #
 if deployment == 'web':
    if __name__ == "__main__": app.run_server(debug=False, host='0.0.0.0', port=8050)
