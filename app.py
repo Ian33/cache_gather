@@ -156,7 +156,7 @@ def update_output(reference_elevation, reference_information, observation, date,
     except:
         time = ""
     return f"measure location: {reference_information} reference elevation: {reference_elevation} observation: {observation} level: {math} at {time}", time
- from upload import upload_field_observation
+from upload import upload_field_observation
 @app.callback(
     Output('container-button-basic', 'children'),
     Input('submit-val', 'n_clicks'),
@@ -170,10 +170,8 @@ def update_output(reference_elevation, reference_information, observation, date,
 )
 def update_output(n_clicks, datetime, reference_elevation, reference_information, observation, site, notes, value):
     df = upload_field_observation(n_clicks, datetime, reference_elevation, reference_information, observation, site, notes, value)
-    return 'The input value was "{}" and the button has been clicked {} times'.format(
-        value,
-        n_clicks
-    )
+    string = 'The input value was "{}" and the button has been clicked {} times'.format(value, n_clicks)
+    return string
 #
 if deployment == 'web':
    if __name__ == "__main__": app.run_server(debug=False, host='0.0.0.0', port=8050)

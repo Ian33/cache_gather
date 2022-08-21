@@ -18,7 +18,10 @@ def upload_field_observation(n_clicks, datetime, reference_elevation, reference_
     #df = pd.DataFrame(cur.fetchall(),columns=['reference_information'])
     #reference_information = df["reference_information"].tolist()
     #reference_information = str(reference_information[0])
-    math = float(reference_elevation)-float(observation)
+    try:
+        math = float(reference_elevation)-float(observation)
+    except:
+        math=""
     df = {'site': [site], 'datetime': [datetime], 'observation': [math], 'notes': [notes]}
     df = pd.DataFrame(data=df)
 
@@ -28,5 +31,6 @@ def upload_field_observation(n_clicks, datetime, reference_elevation, reference_
     df.to_sql('field_observations', cur, if_exists='append')
     cur.execute("select * from field_observations")
     df = pd.DataFrame(cur.fetchall())
-
     return df
+
+    
