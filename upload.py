@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 import psycopg2
 import pandas as pd
 
-def upload_field_observation(n_clicks, datetime, reference_elevation, reference_information, observation, site, notes, value):
+def upload_field_observation(n_clicks, datetime, reference_elevation, reference_information, observation, site, notes):
     try:
         DATABASE_URL = os.environ['DATABASE_URL']
         conn = psycopg2.connect(DATABASE_URL, sslmode='require')
@@ -24,13 +24,16 @@ def upload_field_observation(n_clicks, datetime, reference_elevation, reference_
         math=""
     df = {'site': [site], 'datetime': [datetime], 'observation': [math], 'notes': [notes]}
     df = pd.DataFrame(data=df)
+    df.to_sql('field_observations', cur, if_exists='append')
 
     #sites = pd.read_csv(r"C:\Users\ianrh\Documents\cache_gather\static\site_list.csv")
     #sites = sites.set_index('site_sql_id')
-#sites.to_sql('sites', engine)
-    df.to_sql('field_observations', cur, if_exists='append')
+    #sites.to_sql('sites', engine)
+    '''
+    
     cur.execute("select * from field_observations")
     df = pd.DataFrame(cur.fetchall())
     return df
-
-    
+    '''
+    df = "submitted"
+    return df

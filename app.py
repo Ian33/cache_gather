@@ -166,12 +166,10 @@ from upload import upload_field_observation
     Input("observation", 'value'),
     Input('demo-dropdown', 'value'),
     Input('text_box', 'value'),
-    State('input-on-submit', 'value')
 )
-def update_output(n_clicks, datetime, reference_elevation, reference_information, observation, site, notes, value):
-    df = upload_field_observation(n_clicks, datetime, reference_elevation, reference_information, observation, site, notes, value)
-    string = 'The input value was "{}" and the button has been clicked {} times'.format(value, n_clicks)
-    return string
+def update_output(n_clicks, datetime, reference_elevation, reference_information, observation, site, notes):
+    df = upload_field_observation(n_clicks, datetime, reference_elevation, reference_information, observation, site, notes)
+    return df
 #
 if deployment == 'web':
    if __name__ == "__main__": app.run_server(debug=False, host='0.0.0.0', port=8050)
