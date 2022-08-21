@@ -44,6 +44,6 @@ def get_reference_information(value):
 
 # output
     output = f"site: {value}, elevation: {reference_elevation}, elevation of: {reference_information}, observation: {observation}"
-
+    conn.close()
     return reference_elevation, reference_information, observation, output
 

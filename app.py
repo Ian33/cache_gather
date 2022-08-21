@@ -1,4 +1,5 @@
-from dash import Dash, callback, html, dcc, html, Input, Output, State
+from dash import Dash, callback, html, dcc, html, Input, Output
+import dash
 #import dash_datetimepicker
 import dash_bootstrap_components as dbc
 import numpy as np
@@ -167,8 +168,18 @@ from upload import upload_field_observation
     Input('text_box', 'value'),
 )
 def update_output(n_clicks, datetime, reference_elevation, reference_information, observation, site, notes):
-    df = upload_field_observation(n_clicks, datetime, reference_elevation, reference_information, observation, site, notes)
-    return df
+    changed_id = [p['prop_id'] for p in dash.callback_context.triggered][0]
+    #today = pd.to_datetime("today")
+    if 'submit-val' in changed_id:
+        df = upload_field_observation(n_clicks, datetime, reference_elevation, reference_information, observation, site, notes)
+        return df
+    else:
+        return dash.no_update
+    
+    
+    
+    
+    
 #
 if deployment == 'web':
    if __name__ == "__main__": app.run_server(debug=False, host='0.0.0.0', port=8050)
