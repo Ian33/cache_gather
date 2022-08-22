@@ -32,7 +32,10 @@ df = pd.DataFrame(cur.fetchall(), columns=['site', 'datetime', 'observation', 'n
 
 layout = html.Div([dbc.Container([
     dash_table.DataTable(df.to_dict('records'),[{"name": i, "id": i} for i in df.columns], 
-        id='tbl', sort_action='native', editable=True, row_deletable=True),
+        id='tbl', sort_action='native', editable=True, row_deletable=True, style_data={
+        'whiteSpace': 'normal',
+        'height': 'auto',
+    },),
 ]),
 #     html.Div([
         html.Button('upload', id='upload-val', n_clicks=0),
@@ -64,7 +67,9 @@ def update_output(n_clicks, data, columns):
         if df.empty:
             return "no data"
         else:
-            return "data"
+            #df.to_sql('field_observations', cur, if_exists='append')
+            df.to_sql('field_observations', engine, if_exists='append',index=False)
+            return "edits submitted"
     else:
         return dash.no_update
     

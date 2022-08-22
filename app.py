@@ -44,20 +44,36 @@ def create_dash_layout(app):
     app.title = "Cache Gather" 
     
     # Header
-    header = html.Div([html.Br(), dcc.Markdown("""Cache Hydrology Field Sheet"""), html.Br()])
+    header = html.Div([html.Br(), dcc.Markdown(""" ### Cache Gather: Hydrology Field Sheet"""), html.Br()])
     
     pages = html.Div([
+            #html.Div(
+                #dcc.Link(
+                #    f"{page['name']} - {page['path']}", href=page["relative_path"]
+                #)
+            # https://dash-bootstrap-components.opensource.faculty.ai/docs/components/button/
             html.Div(
-                dcc.Link(
-                    f"{page['name']} - {page['path']}", href=page["relative_path"]
-                ))
+                    dbc.Button(f"{page['name']}",
+                        outline=True,
+                        color="primary",
+                        size="sm",
+                        href=page["relative_path"],),
+                        style={
+                            'display': 'inline-block',
+                            'margin-right': '5px',
+                            "border-radius": "10px",
+                            'height':'37px', 
+                            'verticalAlign': 'top',
+                            }
+            )
+            # 'width': '5%', 
             for page in dash.page_registry.values()
         ])
     # Footer
-    footer = html.Div([html.Br(), html.Br(), dcc.Markdown(""" ### Built with ![Image](heart.png) in Python using [Dash](https://plotly.com/dash/)""")])
+    footer = html.Div([html.Br(), html.Br(), dcc.Markdown(""" by: Ian Higgins """)])
     
     # Assemble dash layout 
-    app.layout = html.Div([html.Div([header, pages, footer]),dash.page_container])
+    app.layout = html.Div([html.Div([header, pages]),dash.page_container, html.Div([footer])])
     
 
     # enable for web app
