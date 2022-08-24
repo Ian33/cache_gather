@@ -24,13 +24,22 @@ dropdown = html.Div([
 date_time = html.Div([
         html.Div([
             html.Div(dcc.Input(id="date", type='text', placeholder="", value=datetime.datetime.now().strftime('%Y-%m-%d')), 
-                style={'width': '30%', 'display': 'inline-block'}
+                #style={'width': '30%', 'display': 'inline-block'}
+                style={'display': 'inline-block',
+                    'margin-right': '15px',
+                    "border-radius": "10px"}
             ),
             html.Div(dcc.Input(id="time_hour", type='number', placeholder="", value=datetime.datetime.now().strftime('%H'), min=0, max=24, step=1),
-                style={'display': 'inline-block'}
+                #style={'display': 'inline-block'}
+                style={'display': 'inline-block',
+                    'margin-right': '5px',
+                    "border-radius": "10px"}
             ),
             html.Div(dcc.Input(id="time_minute", type='number', placeholder="", value=datetime.datetime.now().strftime('%M'), min=0, max=60, step=1),
-                style={'display': 'inline-block'}
+                #style={'display': 'inline-block'}
+                style={'display': 'inline-block',
+                    'margin-right': '5px',
+                    "border-radius": "10px"}
             ),
         html.Div(id='datetime',
             style={'display': 'none'}), 
@@ -40,13 +49,23 @@ date_time = html.Div([
 reference_input = html.Div([
         html.Div([
             html.Div(dcc.Input(id="reference_elevation", type='number', placeholder="", value="elevation"),
-                style={'width': '30%', 'display': 'inline-block'}
+                #style={'width': '30%', 'display': 'inline-block'}
+                style={'display': 'inline-block',
+                    'margin-right': '5px',
+                    "border-radius": "10px"}
+                
             ),
             html.Div(dcc.Input(id="reference_inforation", type='text', placeholder="", value="information"),
-                style={'width': '30%', 'display': 'inline-block'}
+                #style={'width': '30%', 'display': 'inline-block'}
+                style={'display': 'inline-block',
+                    'margin-right': '5px',
+                    "border-radius": "10px"}
             ),
             html.Div(dcc.Input(id="observation", type='number', placeholder="", value=""),
-                style={'width': '30%', 'display': 'inline-block'}
+                #style={'width': '30%', 'display': 'inline-block'}
+                style={'display': 'inline-block',
+                    'margin-right': '5px',
+                    "border-radius": "10px"}
             ),
         ]),
     ])
