@@ -12,7 +12,7 @@ import os
 from sqlalchemy import create_engine
 import psycopg2
 
-deployment = "web"
+deployment = "local"
 
 # Instantiate dash app
 #web
@@ -73,7 +73,7 @@ def create_dash_layout(app):
     footer = html.Div([html.Br(), html.Br(), dcc.Markdown(""" by: Ian Higgins """)])
     
     # Assemble dash layout 
-    app.layout = html.Div([html.Div([header, pages]),dash.page_container, html.Div([footer])])
+    app.layout = html.Div([ html.Div([header, pages]),dash.page_container, html.Div([footer])])
     
 
     # enable for web app
