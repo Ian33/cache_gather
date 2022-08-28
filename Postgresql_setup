@@ -14,7 +14,7 @@ engine = create_engine(f"postgresql://{username}:{password}@{host_name}/{db_name
 df = {'site': ["test two"], 'datetime': ["03/20/2022 11:56"], 'observation': ["4"], 'notes': ["a test note"]}
 df = pd.DataFrame(data=df)
 #df = df.set_index('site')
-#df.to_sql('field_observations', engine, if_exists='append',index=False) #drops old table and creates new empty table
+df.to_sql('field_observations', engine, if_exists='replace',index=False) #drops old table and creates new empty table
 
 #print("inserted")
 # Query the database and obtain data as Python objects
