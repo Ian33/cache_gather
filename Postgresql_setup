@@ -1,9 +1,14 @@
 from  sqlalchemy import create_engine
 #import sqlalchemy
+#import sqlalchemy
 from queue import Empty
 import psycopg2
 
 import pandas as pd
+from sql import get_engine, get_conn
+#engine = get_engine()
+#conn = get_conn()
+
 username = "cwtcmzqujpmszj"
 password = "d9717d1ad9420277ea4b7a2332885a6e7cbc39073d29a0cfd9f733d2df6835b6"
 host_name = "ec2-44-206-197-71.compute-1.amazonaws.com"
@@ -11,6 +16,38 @@ db_name = "d3fpg63d3qj0lt"
 conn = psycopg2.connect(f"postgresql://{username}:{password}@{host_name}/{db_name}")
 engine = create_engine(f"postgresql://{username}:{password}@{host_name}/{db_name}")
 
+def get_table_names():
+    print("table names")
+    print(engine.table_names())
+
+def get_table_info():
+    cur = conn.cursor()
+    cur.execute("SELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'sites'")
+    df = pd.DataFrame(cur.fetchall())
+    print(df)
+
+# https://sqlalchemy-migrate.readthedocs.io/en/v0.7.1/changeset.html
+# https://www.geeksforgeeks.org/python-sqlalchemy-update-table-structure/
+def rename_table():
+    
+    table_name_origional = "field_observations"
+    table_name_new = "observations"
+    cur = conn.cursor()
+    cur.execute("ALTER TABLE field_observations RENAME TO observations")
+    print("executed")
+    conn.commit()
+    conn.close()
+    
+
+ 
+#username = "cwtcmzqujpmszj"
+#password = "d9717d1ad9420277ea4b7a2332885a6e7cbc39073d29a0cfd9f733d2df6835b6"
+#host_name = "ec2-44-206-197-71.compute-1.amazonaws.com"
+#db_name = "d3fpg63d3qj0lt"
+#conn = psycopg2.connect(f"postgresql://{username}:{password}@{host_name}/{db_name}")
+#engine = create_engine(f"postgresql://{username}:{password}@{host_name}/{db_name}")
+
+'''
 df = {'site': ["test two"], 'datetime': ["03/20/2022 11:56"], 'observation': ["4"], 'notes': ["a test note"]}
 df = pd.DataFrame(data=df)
 #df = df.set_index('site')
@@ -27,3 +64,7 @@ print(df2)
 
 cur.close()
 conn.close()
+'''
+#rename_table()
+# get_table_names()
+get_table_info()
