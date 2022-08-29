@@ -8,22 +8,31 @@ def get_reference_information(value):
         return "", "", "", "select site"
 
     else:
-        from sql import get_engine
-        engine = get_engine()
-        conn = engine.raw_connection()
-
+        try:
+            DATABASE_URL = os.environ['DATABASE_URL']
+            conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+        except:
+            username = "cwtcmzqujpmszj"
+            password = "d9717d1ad9420277ea4b7a2332885a6e7cbc39073d29a0cfd9f733d2df6835b6"
+            host_name = "ec2-44-206-197-71.compute-1.amazonaws.com"
+            db_name = "d3fpg63d3qj0lt"
+            conn = psycopg2.connect(f"postgresql://{username}:{password}@{host_name}/{db_name}")
         cur = conn.cursor()
         cur.execute(f"select reference_information from sites where site_number = '{value}'")
         df = pd.DataFrame(cur.fetchall(),columns=['reference_information'])
         reference_information = df["reference_information"].tolist()
         reference_information = str(reference_information[0])
+        #df = df.append("other reference") 
 
+        #return df
+# reference_elevation
 # reference_elevation
     cur.execute(f"select reference_elevation from sites where site_number = '{value}'")
     df = pd.DataFrame(cur.fetchall(),columns=['reference_elevation'])
     reference_elevation = df["reference_elevation"].tolist()
     reference_elevation = str(reference_elevation[0])
 
+# reference_inforation
 # reference_inforation
     cur.execute(f"select reference_information from sites where site_number = '{value}'")
     df = pd.DataFrame(cur.fetchall(),columns=['reference_information'])

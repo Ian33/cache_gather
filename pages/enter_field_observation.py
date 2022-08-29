@@ -13,9 +13,9 @@ from sqlalchemy import create_engine
 import psycopg2
 
 dash.register_page(__name__)
-from sql import get_site_list
+from get_site_list import query_site_list
 
-df = get_site_list()    
+df = query_site_list()    
 dropdown = html.Div([
         dcc.Dropdown(options=df, value='', id='demo-dropdown'),
         html.Div(id='dd-output-container',
