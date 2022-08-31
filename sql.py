@@ -7,14 +7,16 @@ def get_engine():
     try:
         DATABASE_URL = os.environ['DATABASE_URL']
         engine = create_engine(DATABASE_URL)
-        conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+
+        #conn = psycopg2.connect(DATABASE_URL, sslmode='require')
     except:
         username = "cwtcmzqujpmszj"
         password = "d9717d1ad9420277ea4b7a2332885a6e7cbc39073d29a0cfd9f733d2df6835b6"
         host_name = "ec2-44-206-197-71.compute-1.amazonaws.com"
         db_name = "d3fpg63d3qj0lt"
         engine = create_engine(f"postgresql://{username}:{password}@{host_name}/{db_name}")
-        conn = psycopg2.connect(f"postgresql://{username}:{password}@{host_name}/{db_name}")
+        
+        #conn = psycopg2.connect(f"postgresql://{username}:{password}@{host_name}/{db_name}")
         # use conn = engine.raw_connection() for conn
     return engine
 

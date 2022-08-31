@@ -16,6 +16,7 @@ returns a list of active sites from database table sites
 site                    text
 datetime                text
 observation             text
+observation_type        text
 notes                   text
 #### sites
 site_sql_id             bigint

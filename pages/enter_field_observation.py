@@ -53,7 +53,6 @@ reference_input = html.Div([
                 style={'display': 'inline-block',
                     'margin-right': '5px',
                     "border-radius": "10px"}
-                
             ),
             html.Div(dcc.Input(id="reference_inforation", type='text', placeholder="", value="information"),
                 #style={'width': '30%', 'display': 'inline-block'}
