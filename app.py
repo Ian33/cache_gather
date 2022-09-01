@@ -44,7 +44,18 @@ def create_dash_layout(app):
     app.title = "Cache Gather" 
     
     # Header
-    header = html.Div([html.Br(), dcc.Markdown(""" ### Cache Gather: Hydrology Field Sheet"""), html.Br()])
+    header = html.Div([
+                html.Br(),
+                html.Div([
+                    dcc.Markdown(""" ### Cache Gather: Hydrology Field Sheet &nbsp;"""),],
+                    style={'display': 'inline-block'},
+                ),
+                html.Div([
+                    html.Img(src=r'static/chipmunk/chipmunk_large.png', alt='image'),],
+                 style={'display': 'inline-block'},
+                ),
+                html.Br()
+            ])
     
     pages = html.Div([
             #html.Div(

@@ -21,6 +21,6 @@ def get_db_obs():
         engine = get_engine()
         conn = engine.raw_connection()
         cur = conn.cursor()
-        cur.execute("SELECT * FROM field_observations;")
+        cur.execute("SELECT * FROM observations;")
         db_obs = pd.DataFrame(cur.fetchall(), columns=['site', 'datetime', 'observation', 'notes'])
         return db_obs
