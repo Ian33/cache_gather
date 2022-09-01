@@ -65,7 +65,7 @@ def update_graphs(active_cell):
 def get_data(load_val):
     changed_id = [p['prop_id'] for p in dash.callback_context.triggered][0]
     #today = pd.to_datetime("today")
-    if 'load-val' in changed_id:
+    if 'load_val' in changed_id:
         db_obs = get_db_obs()
         return  db_obs.to_dict('records'), [{"name": i, "id": i} for i in db_obs.columns], "query"
     else:
@@ -86,7 +86,7 @@ def get_data(load_val):
 def update_output(n_clicks, data, columns):
     changed_id = [p['prop_id'] for p in dash.callback_context.triggered][0]
     #today = pd.to_datetime("today")
-    if 'upload-val' in changed_id:
+    if 'upload_val' in changed_id:
         df = pd.DataFrame(data)
         if df.empty:
             return "no data"
