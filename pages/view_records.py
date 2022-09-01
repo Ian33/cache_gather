@@ -94,7 +94,7 @@ def update_output(n_clicks, data, columns):
             engine = get_engine()
             #df.to_sql('field_observations', cur, if_exists='append')
             #df.to_sql('field_observations', engine, if_exists='append',index=False)
-            df.to_sql('field_observations', engine, if_exists='replace',index=False)
+            df.to_sql('observations', engine, if_exists='replace',index=False)
             return "edits submitted"
     else:
         return dash.no_update
