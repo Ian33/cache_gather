@@ -12,7 +12,7 @@ import os
 from sqlalchemy import create_engine
 import psycopg2
 
-deployment = "web"
+deployment = "local"
 
 # Instantiate dash app
 #web

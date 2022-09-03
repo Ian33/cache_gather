@@ -13,9 +13,10 @@ from sqlalchemy import create_engine
 import psycopg2
 
 dash.register_page(__name__)
-from get_site_list import query_site_list
 
-df = query_site_list()    
+from sql import get_site_list, upload_observation
+df = get_site_list() 
+
 dropdown = html.Div([
         dcc.Dropdown(options=df, value='', id='demo-dropdown'),
         html.Div(id='dd-output-container',
@@ -126,7 +127,7 @@ def update_output(reference_elevation, reference_information, observation, date,
     except:
         time = ""
     return f"measure location: {reference_information} reference elevation: {reference_elevation} observation: {observation} level: {math} at {time}", time
-from upload import upload_field_observation
+
 @callback(
     Output('button_text', 'children'),
     Input('submit-val', 'n_clicks'),
@@ -141,7 +142,8 @@ def update_output(n_clicks, datetime, reference_elevation, reference_information
     changed_id = [p['prop_id'] for p in dash.callback_context.triggered][0]
     #today = pd.to_datetime("today")
     if 'submit-val' in changed_id:
-        df = upload_field_observation(n_clicks, datetime, reference_elevation, reference_information, observation, site, notes)
+        df = upload_observation(datetime, reference_elevation, observation, site, notes)
+
         return df
     else:
         return dash.no_update

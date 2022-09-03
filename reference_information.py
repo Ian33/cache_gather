@@ -6,7 +6,6 @@ import pandas as pd
 def get_reference_information(value):
     if value == "":
         return "", "", "", "select site"
-
     else:
         try:
             DATABASE_URL = os.environ['DATABASE_URL']
