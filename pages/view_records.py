@@ -42,8 +42,11 @@ def get_data(load_val):
     changed_id = [p['prop_id'] for p in dash.callback_context.triggered][0]
     #today = pd.to_datetime("today")
     if 'load_val' in changed_id:
+
         db_obs = get_observations()
         return  db_obs.to_dict('records'), [{"name": i, "id": i} for i in db_obs.columns], "refreshed"
+
+
     else:
         db_obs = get_observations()
         return  db_obs.to_dict('records'), [{"name": i, "id": i} for i in db_obs.columns], ""
@@ -57,7 +60,9 @@ def get_data(load_val):
 def update_output(n_clicks, data, columns):
     changed_id = [p['prop_id'] for p in dash.callback_context.triggered][0]
     #today = pd.to_datetime("today")
+
     if 'submit_changes_button' in changed_id:
+
         df = pd.DataFrame(data)
         #if df.empty:
             #return "no data"
@@ -66,5 +71,7 @@ def update_output(n_clicks, data, columns):
         df.to_sql('observations', engine, if_exists='replace',index=False)
         return "edits submitted"
     else:
+
         #return dash.no_update
         return ""
+
