@@ -127,6 +127,7 @@ def update_output(reference_elevation, reference_information, observation, date,
     except:
         time = ""
     return f"measure location: {reference_information} reference elevation: {reference_elevation} observation: {observation} level: {math} at {time}", time
+
 @callback(
     Output('button_text', 'children'),
     Input('submit-val', 'n_clicks'),
@@ -142,6 +143,7 @@ def update_output(n_clicks, datetime, reference_elevation, reference_information
     #today = pd.to_datetime("today")
     if 'submit-val' in changed_id:
         df = upload_observation(datetime, reference_elevation, observation, site, notes)
+
         return df
     else:
         return dash.no_update
