@@ -60,7 +60,7 @@ def get_observations():
     return db_obs
 
 def update_observations(df):
-    engine = create_connection(df)        
+    engine = create_connection()        
     df.to_sql('observations', engine, if_exists='replace',index=False)
     statement = "updated"
     return statement

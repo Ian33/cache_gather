@@ -12,15 +12,15 @@ dash.register_page(__name__)
 # https://dash.plotly.com/live-updates
 
 # set up database connection
-from sql import get_observations, update_observations
+from sql import get_observations, update_observations, create_connection
 
 layout = html.Div([
 #     html.Div([
         html.Button('load field observations', id='load_val', n_clicks=0),
         html.Div(id='load_text',
              children='load'),
-        html.Button('upload', id='upload_val', n_clicks=0),
-        html.Div(id='upload_text',
+        html.Button('submit changes', id='submit_changes_button', n_clicks=0),
+        html.Div(id='submit_changes_text',
              children='submit changes'),
         html.Div(dash_table.DataTable(id='tbl', sort_action='native', editable=True, row_deletable=True, 
             style_table={'overflowX': 'auto'},
@@ -43,26 +43,28 @@ def get_data(load_val):
     #today = pd.to_datetime("today")
     if 'load_val' in changed_id:
         db_obs = get_observations()
-        return  db_obs.to_dict('records'), [{"name": i, "id": i} for i in db_obs.columns], "query"
+        return  db_obs.to_dict('records'), [{"name": i, "id": i} for i in db_obs.columns], "refreshed"
     else:
         db_obs = get_observations()
-        return  db_obs.to_dict('records'), [{"name": i, "id": i} for i in db_obs.columns], "query"
+        return  db_obs.to_dict('records'), [{"name": i, "id": i} for i in db_obs.columns], ""
     
 @callback(
-    Output('upload_text', 'children'),
-    Input('upload_val', 'n_clicks'),
+    Output('submit_changes_text', 'children'),
+    Input('submit_changes_button', 'n_clicks'),
     Input('tbl', 'data'),
     Input('tbl', 'columns'),
 )
 def update_output(n_clicks, data, columns):
     changed_id = [p['prop_id'] for p in dash.callback_context.triggered][0]
     #today = pd.to_datetime("today")
-    if 'upload_val' in changed_id:
+    if 'submit_changes_button' in changed_id:
         df = pd.DataFrame(data)
-        if df.empty:
-            return "no data"
-        else:
-            statement = update_observations(df)
-            return statement
+        #if df.empty:
+            #return "no data"
+       # else:
+        engine = create_connection()        
+        df.to_sql('observations', engine, if_exists='replace',index=False)
+        return "edits submitted"
     else:
-        return dash.no_update
+        #return dash.no_update
+        return ""
