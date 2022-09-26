@@ -1,15 +1,123 @@
 from  sqlalchemy import create_engine
 #import sqlalchemy
+#import sqlalchemy
 from queue import Empty
 import psycopg2
 
 import pandas as pd
+
+#engine = get_engine()
+#conn = get_conn()
+
 username = "cwtcmzqujpmszj"
 password = "d9717d1ad9420277ea4b7a2332885a6e7cbc39073d29a0cfd9f733d2df6835b6"
 host_name = "ec2-44-206-197-71.compute-1.amazonaws.com"
 db_name = "d3fpg63d3qj0lt"
 conn = psycopg2.connect(f"postgresql://{username}:{password}@{host_name}/{db_name}")
 engine = create_engine(f"postgresql://{username}:{password}@{host_name}/{db_name}")
+
+def get_table_names():
+    print("table names")
+    print(engine.table_names())
+
+def get_table_info(table):
+    cur = conn.cursor()
+    cur.execute(f"SELECT column_name, data_type FROM information_schema.columns WHERE table_name = '{table}'")
+    df = pd.DataFrame(cur.fetchall())
+    cur.close()
+    conn.close()
+    print(df)
+
+# https://sqlalchemy-migrate.readthedocs.io/en/v0.7.1/changeset.html
+# https://www.geeksforgeeks.org/python-sqlalchemy-update-table-structure/
+def rename_table():
+    table_name_origional = "field_observations"
+    table_name_new = "observations"
+    cur = conn.cursor()
+    cur.execute("ALTER TABLE field_observations RENAME TO observations")
+    
+    print("executed")
+    conn.commit()
+    conn.close()
+def create_parameter_table():
+
+    #https://www.postgresql.org/docs/current/datatype.html
+    cursor = conn.cursor()
+    #parameter_id SERIAL PRIMARY KEY,
+    cursor.execute("""DROP TABLE parameter""")
+    cursor.execute("""CREATE TABLE parameter (
+        site VARCHAR,
+        parameter VARCHAR, 
+        reference_point VARCHAR,
+        reference_information VARCHAR,
+        unit VARCHAR,
+        notes VARCHAR
+        )""")
+    print("executed")
+    conn.commit()
+    conn.close()
+
+def create_sites_table():
+    #https://www.postgresql.org/docs/current/datatype.html
+    cur = conn.cursor()
+    cur.execute("""CREATE TABLE site (
+        site VARCHAR (10) NOT NULL UNIQUE,
+        timestamp TIMESTAMP, 
+        note VARCHAR (200)
+        PRIMARY KEY (site)
+        )""")
+    print("executed")
+    conn.commit()
+    conn.close()
+def create_observations_table():
+    #https://www.postgresql.org/docs/current/datatype.html
+    cur = conn.cursor()
+    cursor = conn.cursor()
+    cursor.execute("""DROP TABLE observations""")
+    cur.execute("""CREATE TABLE observations (
+        site VARCHAR (20),
+        datetime TIMESTAMP,
+        parameter VARCHAR (20),
+        observation  text,
+        notes  text
+        )""")
+ 
+    #cur.execute("""CREATE TABLE observations (
+    ##    site VARCHAR (10),
+    #    timestamp TIMESTAMP, 
+    #    observation_raw DECIMAL (3),
+    #    reference_point DECIMAL (3),
+    #    observation DECIMAL (3)
+    #    reference_information VARCHAR (200),
+    #    parameter VARCHAR (20),
+    #    unit VARCHAR (20),
+    #    note VARCHAR (200)
+    #    )""")
+    print("executed")
+    conn.commit()
+    conn.close()
+ 
+#username = "cwtcmzqujpmszj"
+#password = "d9717d1ad9420277ea4b7a2332885a6e7cbc39073d29a0cfd9f733d2df6835b6"
+#host_name = "ec2-44-206-197-71.compute-1.amazonaws.com"
+#db_name = "d3fpg63d3qj0lt"
+#conn = psycopg2.connect(f"postgresql://{username}:{password}@{host_name}/{db_name}")
+#engine = create_engine(f"postgresql://{username}:{password}@{host_name}/{db_name}")
+
+def upload_df(table, path, filename):
+    df = pd.read_csv(f"{path}{filename}")
+    df.to_sql(table, engine, if_exists='append',index=False) #drops old table and creates new empty table
+
+def read_table(table):
+    conn = engine.raw_connection()
+    cur = conn.cursor()
+    cur.execute(f"SELECT * FROM {table};")
+    df2 = pd.DataFrame(cur.fetchall())
+    print("data")
+    print(df2)
+
+    
+'''
 
 df = {'site': ["test two"], 'datetime': ["03/20/2022 11:56"], 'observation': ["4"], 'notes': ["a test note"]}
 df = pd.DataFrame(data=df)
@@ -27,3 +135,20 @@ print(df2)
 
 cur.close()
 conn.close()
+'''
+#rename_table()
+# get_table_names()
+#add_column()
+
+#create observation table
+
+#create_parameter_table()
+
+#create_sites_table()
+create_observations_table()
+table = "observations"
+path = r"C:/Users/ianrh/Documents/"
+filename = r"parameter.csv"
+#upload_df(table, path, filename)
+#get_table_info(table)
+#read_table(table)

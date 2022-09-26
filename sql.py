@@ -37,13 +37,13 @@ def get_site_list():
     conn.close()
     return df
 
-def upload_observation(datetime, reference_elevation, observation, site, notes):
+def upload_observation(datetime, parameter, reference_elevation, observation, site, notes):
     engine = create_connection()    
     try:
         math = float(reference_elevation)-float(observation)
     except:
         math=""
-    df = {'site': [site], 'datetime': [datetime], 'observation': [math], 'notes': [notes]}
+    df = {'site': [site], 'datetime': [datetime], 'parameter': [parameter],'observation': [math], 'notes': [notes]}
     df = pd.DataFrame(data=df)
     #df.to_sql('field_observations', cur, if_exists='append')
     df.to_sql('observations', engine, if_exists='append',index=False)
@@ -56,7 +56,7 @@ def get_observations():
     conn = engine.raw_connection()
     cur = conn.cursor()
     cur.execute("SELECT * FROM observations;")
-    db_obs = pd.DataFrame(cur.fetchall(), columns=['site', 'datetime', 'observation', 'notes'])
+    db_obs = pd.DataFrame(cur.fetchall(), columns=['site', 'datetime', 'parameter', 'observation', 'notes'])
     return db_obs
 
 def update_observations(df):
@@ -64,3 +64,4 @@ def update_observations(df):
     df.to_sql('observations', engine, if_exists='replace',index=False)
     statement = "updated"
     return statement
+
