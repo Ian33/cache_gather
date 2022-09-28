@@ -67,6 +67,7 @@ def update_output(n_clicks, data, columns):
         #if df.empty:
             #return "no data"
        # else:
+        update_observations(df)
         engine = create_connection()        
         df.to_sql('observations', engine, if_exists='replace',index=False)
         return "edits submitted"
