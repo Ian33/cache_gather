@@ -154,9 +154,9 @@ def reference_elevation_ability(parameter_dropdown_value):
 def update_output(site_list_value, parameter_dropdown_value):
     #observation, output = get_reference_information(site_list_value)
     #
-    date = datetime.datetime.now().strftime('%Y-%m-%d')
-    time_hour = datetime.datetime.now().strftime('%H')
-    time_minute = datetime.datetime.now().strftime('%M')
+    date = (datetime.datetime.now() - datetime.timedelta(hours=7)).strftime('%Y-%m-%d')
+    time_hour = (datetime.datetime.now() - datetime.timedelta(hours=7)).strftime('%H')
+    time_minute = (datetime.datetime.now() - datetime.timedelta(hours=7)).strftime('%M')
 
     parameter_options = get_parameters(site_list_value)
     parameter_references_options, reference_point, parameter_references_value = get_parameter_references(site_list_value, parameter_options, parameter_dropdown_value)
